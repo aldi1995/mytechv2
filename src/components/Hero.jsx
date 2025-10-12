@@ -4,7 +4,7 @@ import { ArrowUpRight, PlayCircle } from "lucide-react";
 const Hero = () => {
   const stats = [
     { value: "99%", label: "Kepuasan Klien" },
-    { value: "1500+", label: "Proyek Selesai" },
+    { value: "10+", label: "Proyek Selesai" },
     { value: "24/7", label: "Dukungan Ahli" },
   ];
 
@@ -25,12 +25,13 @@ const Hero = () => {
         <div className="text-center space-y-8 max-w-4xl mx-auto">
           {/* Konten utama */}
           <div className="space-y-6">
-            <h1 className="text-6xl sm:text-7xl font-bold tracking-tight text-slate-900 lg:text-8xl">
-              Wujudkan
-              <span className="block mt-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-                Visi Digital Anda
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-slate-900 leading-tight overflow-visible">
+               Wujudkan
+                 <span className="block mt-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+               Visi Digital Anda
               </span>
             </h1>
+
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Rasakan perpaduan sempurna antara inovasi dan keunggulan melalui
               solusi modern kami yang dirancang untuk meningkatkan kehadiran
