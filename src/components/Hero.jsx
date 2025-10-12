@@ -28,7 +28,7 @@ const Hero = () => {
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-slate-900 leading-tight overflow-visible">
                Wujudkan
                  <span className="block mt-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-               Visi Digital Anda
+               Visi Anda
               </span>
             </h1>
 

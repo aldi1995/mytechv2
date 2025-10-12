@@ -170,7 +170,7 @@ const Portfolio = () => {
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 lg:text-6xl">
             Menampilkan
             <span className="block mt-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-              Keunggulan Digital Kami
+              Kehebatan Kami
             </span>
           </h2>
 
