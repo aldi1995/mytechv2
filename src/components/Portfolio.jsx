@@ -12,7 +12,7 @@ const Portfolio = () => {
     title: "Remotely.id",
     description:
       "Platform digital terpadu untuk manajemen kerja jarak jauh yang mencakup HRMS, manajemen proyek, payroll, absensi, dan komunikasi tim dalam satu dashboard. Dirancang untuk meningkatkan produktivitas, transparansi, dan kolaborasi lintas industri.",
-    image: "/src/remotely.jpg",
+    image: "/remotely.jpg",
     category: "Web Platform",
     technologies: [
       "Node.js",
@@ -31,7 +31,7 @@ const Portfolio = () => {
     title: "E-Kantin Bina Persada School",
     description:
       "Aplikasi web modern untuk digitalisasi sistem kantin sekolah. Fitur mencakup top-up saldo siswa, voucher makan siang, laporan transaksi, dan otomatisasi layanan untuk efisiensi operasional dan pengalaman pengguna yang lebih baik.",
-    image: "/src/ekantin.png",
+    image: "/ekantin.png",
     category: "Web Apps",
     technologies: [
       "PHP",
@@ -50,7 +50,7 @@ const Portfolio = () => {
     title: "Jalin Sehat",
     description:
       "Aplikasi pendaftaran rumah sakit berbasis SaaS yang memudahkan pasien untuk mendaftar online, melihat jadwal dokter, dan mengelola data kesehatan dengan cepat dan aman.",
-    image: "/src/jalinsehat.jpg",
+    image: "/jalinsehat.jpg",
     category: "Mobile & Web App",
     technologies: [
       "JavaScript",
@@ -69,7 +69,7 @@ const Portfolio = () => {
     title: "Learning Hands",
     description:
       "Website preschool interaktif yang menggabungkan pembelajaran berbasis permainan dengan aktivitas edukatif, cerita interaktif, dan sumber daya untuk orang tua. Dirancang untuk mendukung perkembangan anak usia dini melalui pengalaman belajar yang menyenangkan dan penuh nilai positif.",
-    image: "/src/learninghands.png",
+    image: "/learninghands.png",
     category: "Education Website",
     technologies: [
       "Laravel",
@@ -88,7 +88,7 @@ const Portfolio = () => {
   title: "Fazar",
   description:
     "Website e-commerce yang dikembangkan untuk memfasilitasi penjualan produk secara online dengan fitur katalog, keranjang belanja, dan sistem manajemen pesanan. Dirancang dengan fokus pada performa tinggi, keamanan transaksi, serta pengalaman pengguna yang nyaman.",
-  image: "/src/fazar.png",
+  image: "/fazar.png",
   category: "E-Commerce Website",
   technologies: [
     "PHP",
@@ -107,7 +107,7 @@ const Portfolio = () => {
   title: "Chatting Apps | ChatMe!",
   description:
     "Aplikasi web chat berbasis real-time yang memungkinkan pengguna untuk berkomunikasi melalui pesan teks, gambar, video, dan suara. Dilengkapi dengan sistem autentikasi berbasis JWT, manajemen profil pengguna, grup chat, notifikasi instan, serta penyimpanan riwayat pesan. Dirancang dengan fokus pada keamanan, privasi, dan pengalaman pengguna yang responsif.",
-  image: "/src/chatz.jpg",
+  image: "/chatz.jpg",
   category: "Communication App",
   technologies: [
     "PHP",
@@ -127,7 +127,7 @@ const Portfolio = () => {
   title: "Website Wedding Organizer",
   description:
     "Platform online yang membantu calon pengantin dalam merencanakan pernikahan mereka. Website ini menyediakan katalog vendor, portofolio layanan, alat perencanaan dan penganggaran, serta fitur testimoni dan galeri untuk inspirasi pernikahan. Dirancang untuk menghubungkan pasangan dengan penyedia layanan pernikahan secara efisien dan profesional.",
-  image: "/src/wedding.jpg",
+  image: "/wedding.jpg",
   category: "Service Website",
   technologies: [
     "PHP",
