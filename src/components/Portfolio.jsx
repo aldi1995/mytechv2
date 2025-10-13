@@ -142,7 +142,6 @@ const Portfolio = () => {
     { label: "Vendor Terdaftar", value: "50+" },
     { label: "Kepuasan Pengguna", value: "97%" }
   ]
-<<<<<<< HEAD
 },
 {
   title: "Website Bina Persada International School",
@@ -160,7 +159,7 @@ const Portfolio = () => {
     "IT Service Management"
   ],
   metrics: [
-    { label: "Siswa Terdaftar", value: "50+" },
+    { label: "Siswa Terdaftar", value: "100+" },
     { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
@@ -180,7 +179,7 @@ const Portfolio = () => {
     "IT Service Management"
   ],
   metrics: [
-    { label: "Siswa Terdaftar", value: "50+" },
+    { label: "Klien Terbantu", value: "50+" },
     { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
@@ -200,7 +199,7 @@ const Portfolio = () => {
     "IT Service Management"
   ],
   metrics: [
-    { label: "Siswa Terdaftar", value: "50+" },
+    { label: "Jemaat Terdaftar", value: "50+" },
     { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
@@ -220,13 +219,10 @@ const Portfolio = () => {
     "IT Service Management"
   ],
   metrics: [
-    { label: "Siswa Terdaftar", value: "50+" },
+    { label: "Volunteer Terdata", value: "50+" },
     { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
-=======
-}
->>>>>>> 114c1bf6838288a4f53318f583678a474ad0afa3
 
 
 
