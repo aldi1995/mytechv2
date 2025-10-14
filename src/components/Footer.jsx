@@ -85,9 +85,14 @@ const Footer = () => {
                 <span>+62 851-5692-8164</span>
               </li>
               <li className="flex items-center text-slate-300">
-                <Mail className="w-5 h-5 mr-3 text-violet-400" />
-                <span>hello@mytech-indonesia.web.id</span>
-              </li>
+  <Mail className="w-5 h-5 mr-3 text-violet-400" />
+  <a
+    href="mailto:hello@mytech-indonesia.web.id"
+    className="hover:text-violet-400 transition-colors duration-200"
+  >
+    hello@mytech-indonesia.web.id
+  </a>
+</li>
               <li className="flex items-center text-slate-300">
                 <MapPin className="w-5 h-5 mr-3 text-violet-400" />
                 <span>
