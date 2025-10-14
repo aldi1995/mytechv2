@@ -99,14 +99,20 @@ const Footer = () => {
     hello@mytech-indonesia.web.id
   </a>
 </li>
-              <li className="flex items-center text-slate-300">
-                <MapPin className="w-5 h-5 mr-3 text-violet-400" />
-                <span>
-                  Jl. Cipedes Tengah No.35, Sukagalih, Kec. Sukajadi,
-                  <br />
-                  Kota Bandung, Jawa Barat 40163
-                </span>
-              </li>
+              <li className="flex items-start text-slate-300">
+  <MapPin className="w-5 h-5 mr-3 text-violet-400 mt-1" />
+  <a
+    href="https://www.google.com/maps?q=Jl.+Cipedes+Tengah+No.35,+Sukagalih,+Sukajadi,+Bandung,+Jawa+Barat+40163"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-violet-400 transition-colors duration-200 leading-relaxed"
+  >
+    Jl. Cipedes Tengah No.35, Sukagalih, Kec. Sukajadi,
+    <br />
+    Kota Bandung, Jawa Barat 40163
+  </a>
+</li>
+
             </ul>
           </div>
 
