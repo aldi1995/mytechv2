@@ -168,7 +168,7 @@ const Portfolio = () => {
   description:
     "Platform online untuk meminta konsultasi hukum dan layanan hukum dari LBH Inayah Filia. Website ini menyediakan informasi tentang layanan hukum, profil pengacara, artikel hukum, dan formulir kontak untuk memudahkan klien dalam mendapatkan bantuan hukum. Dirancang untuk memberikan akses yang mudah dan transparan terhadap layanan hukum bagi masyarakat.",
   image: "/if.png",
-  category: "School Website",
+  category: "Legal First Aid Website",
   technologies: [
     "PHP",
     "Laravel",
@@ -188,7 +188,7 @@ const Portfolio = () => {
   description:
     "Website resmi Gereja GSK Bandung yang menyediakan informasi tentang kegiatan gereja, jadwal ibadah, pelayanan komunitas, dan sumber daya rohani. Dirancang untuk memperkuat komunikasi antara jemaat dan memfasilitasi partisipasi aktif dalam kehidupan gereja.",
   image: "/gsk.png",
-  category: "School Website",
+  category: "Church Website",
   technologies: [
     "PHP",
     "Laravel",
@@ -208,7 +208,7 @@ const Portfolio = () => {
   description:
     "Website resmi NGO 7Lung yang menyediakan informasi tentang misi, program, dan kegiatan organisasi. Website ini juga menampilkan laporan tahunan, galeri foto, dan formulir donasi untuk mendukung kegiatan sosial. Dirancang untuk meningkatkan kesadaran dan partisipasi masyarakat dalam mendukung tujuan kemanusiaan NGO.",
   image: "/7l.png",
-  category: "School Website",
+  category: "NGO Foundation Website",
   technologies: [
     "PHP",
     "Laravel",

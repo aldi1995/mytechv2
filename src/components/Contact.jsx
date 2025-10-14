@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Kontak Kami",
-      details: ["Telepon: +62 851-5692-8164", "Email: hello@mytech-indonesia.id"],
+      details: ["Telepon: +62 851-5692-8164", "Email: hello@mytech-indonesia.web.id"],
       ariaLabel: "Informasi Kontak",
     },
     {
