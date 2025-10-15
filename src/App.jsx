@@ -10,10 +10,10 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
+import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-// Wrapper component to handle scroll to top on route change
 const ScrollToTop = () => {
   const location = useLocation();
 
@@ -24,7 +24,6 @@ const ScrollToTop = () => {
   return null;
 };
 
-// Layout component to handle shared structure
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -37,16 +36,8 @@ const Layout = ({ children }) => {
   );
 };
 
-// Page components
-const HomePage = () => (
-  <>
-    <Hero />
-    <About />
-    <Services />
-    <Portfolio />
-    <Contact />
-  </>
-);
+// ✅ Hanya Hero (tanpa About, Services, Portfolio, Contact)
+const HomePage = () => <Hero />;
 
 const AboutPage = () => <About />;
 const ServicesPage = () => <Services />;
@@ -63,6 +54,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Layout>
