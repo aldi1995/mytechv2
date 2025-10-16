@@ -16,9 +16,6 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Beranda", url: "/" },
-    { name: "Tentang Kami", url: "/about" },
-    { name: "Layanan", url: "/services" },
     { name: "Portofolio", url: "/portfolio" },
     { name: "Pricing", url: "/pricing" },
     { name: "Kontak", url: "/contact" },
