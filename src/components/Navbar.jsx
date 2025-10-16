@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const menuItems = [
     { title: "Beranda", href: "/" },
-    { title: "Tentang", href: "/about" },
+    { title: "Tentang Kami", href: "/about" },
     { title: "Layanan", href: "/services" },
     { title: "Portofolio", href: "/portfolio" },
     { title: "Pricing", href: "/pricing" },
