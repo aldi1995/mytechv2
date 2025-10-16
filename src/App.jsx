@@ -8,6 +8,7 @@ import {
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Team from "./components/Team";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Pricing from "./components/Pricing";
@@ -52,6 +53,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/pricing" element={<Pricing />} />
