@@ -58,9 +58,11 @@ const About = () => {
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 leading-relaxed">
-            Dengan pengalaman lebih dari satu dekade, kami telah membantu
-            puluhan bisnis mencapai tujuan transformasi digital mereka melalui
-            solusi yang inovatif.
+            Didirikan pada tahun 2023, Mytech Indonesia hadir sebagai mitra digital bagi bisnis dan organisasi yang ingin bertransformasi di era teknologi.
+
+Kami mengembangkan solusi digital mulai dari website, aplikasi bisnis, hingga layanan sistem informasi yang dirancang untuk meningkatkan efisiensi, visibilitas, dan produktivitas klien kami.
+
+Mytech Indonesia percaya bahwa teknologi bukan sekadar alat, tetapi jembatan menuju pertumbuhan — dan kami ada untuk membantu Anda melewatinya.
           </p>
         </div>
 
