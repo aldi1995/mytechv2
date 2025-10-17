@@ -427,6 +427,24 @@ const Portfolio = () => {
   ]
 },
 {
+  title: "Kury'n Travel dan Sewa Mobil",
+  description:
+    "Website resmi Kury'n Travel yang menyediakan informasi tentang layanan travel dan sewa mobil, rute perjalanan, dan formulir pemesanan online. Dirancang untuk memberikan pengalaman pengguna yang mudah dan efisien dalam merencanakan perjalanan.",
+  image: "/kuryn.png",
+  category: "Travel Agency Website",
+  technologies: [
+    "PHP",
+    "MySQL",
+    "Laravel",
+    "Bootstrap",
+    "Cloud Hosting"
+  ],
+  metrics: [
+    { label: "Mobil Tersedia", value: "50+" },
+    { label: "Kepuasan User", value: "97%" }
+  ]
+},
+{
   title: "Website Registrasi Relawan 7Lung",
   description:
     "Website registrasi relawan untuk NGO 7Lung yang memudahkan",
