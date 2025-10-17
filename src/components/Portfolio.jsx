@@ -406,12 +406,12 @@ const Portfolio = () => {
     { label: "Murid Terdata", value: "500+" },
     { label: "Kepuasan Orang Tua", value: "97%" }
   ]
-}
+},
 {
   title: "Website Streaming Musik Online",
   description:
     "Applikasi web untuk streaming musik online dengan fitur pencarian lagu, playlist, dan rekomendasi berdasarkan preferensi pengguna. Dirancang untuk memberikan pengalaman mendengarkan musik yang personal dan interaktif.",
-  image: "/musik.png",
+  image: "/music.png",
   category: "Music Streaming Website",
   technologies: [
     "React.js",
@@ -425,7 +425,7 @@ const Portfolio = () => {
     { label: "Musik Tersedia", value: "500+" },
     { label: "Kepuasan User", value: "97%" }
   ]
-}
+},
 {
   title: "Website Registrasi Relawan 7Lung",
   description:
@@ -444,7 +444,7 @@ const Portfolio = () => {
     { label: "Anggota Terdata", value: "100+" },
     { label: "Anggota Resmi", value: "97%" }
   ]
-}
+},
 {
   title: "Pelaporan Bencana Alam Berbasis Web",
   description:
@@ -463,7 +463,7 @@ const Portfolio = () => {
     { label: "Teratas", value: "100+" },
     { label: "Keselamatan", value: "97%" }
   ]
-}
+},
 {
   title: "Webapps POS Untuk Restoran",
   description:
@@ -482,11 +482,8 @@ const Portfolio = () => {
     { label: "Resto - Kafe Terbantu", value: "500+" },
     { label: "Kepuasan User", value: "97%" }
   ]
-}
-
-
-
-  ];
+},
+];
 
   return (
     <section className="relative py-32 bg-slate-50">
