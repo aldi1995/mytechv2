@@ -3,8 +3,8 @@ import { ArrowUpRight } from "lucide-react";
 
 const Hero = () => {
   const stats = [
-    { value: "99%", label: "Kepuasan Klien" },
-    { value: "10+", label: "Proyek Selesai" },
+    { value: "98%", label: "Kepuasan Klien" },
+    { value: "20+", label: "Proyek Selesai" },
     { value: "24/7", label: "Dukungan Ahli" },
   ];
 
