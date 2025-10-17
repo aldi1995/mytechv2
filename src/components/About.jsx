@@ -28,7 +28,7 @@ const About = () => {
 
   const stats = [
     { number: "5+", label: "Tahun Pengalaman" },
-    { number: "10+", label: "Proyek Terselesaikan" },
+    { number: "20+", label: "Proyek Terselesaikan" },
     { number: "98%", label: "Kepuasan Klien" },
     { number: "5+", label: "Tim Ahli" },
   ];
