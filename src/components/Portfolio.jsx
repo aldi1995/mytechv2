@@ -407,6 +407,82 @@ const Portfolio = () => {
     { label: "Kepuasan Orang Tua", value: "97%" }
   ]
 }
+{
+  title: "Website Streaming Musik Online",
+  description:
+    "Applikasi web untuk streaming musik online dengan fitur pencarian lagu, playlist, dan rekomendasi berdasarkan preferensi pengguna. Dirancang untuk memberikan pengalaman mendengarkan musik yang personal dan interaktif.",
+  image: "/musik.png",
+  category: "Music Streaming Website",
+  technologies: [
+    "React.js",
+    "Firebase",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "Cloud Hosting"
+  ],
+  metrics: [
+    { label: "Musik Tersedia", value: "500+" },
+    { label: "Kepuasan User", value: "97%" }
+  ]
+}
+{
+  title: "Website Registrasi Relawan 7Lung",
+  description:
+    "Website registrasi relawan untuk NGO 7Lung yang memudahkan",
+  image: "/reg.png",
+  category: "Volunteer Registration Website",
+  technologies: [
+    "React.js",
+    "Firebase",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "Cloud Hosting"
+  ],
+  metrics: [
+    { label: "Anggota Terdata", value: "100+" },
+    { label: "Anggota Resmi", value: "97%" }
+  ]
+}
+{
+  title: "Pelaporan Bencana Alam Berbasis Web",
+  description:
+    "Aplikasi web untuk pelaporan bencana alam secara real-time dengan fitur peta interaktif, sistem notifikasi, dan laporan kondisi terkini. Dirancang untuk meningkatkan kesiapsiagaan dan respons cepat terhadap bencana alam.",
+  image: "/report.png",
+  category: "Disaster Reporting Website",
+  technologies: [
+    "React.js",
+    "Firebase",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "Cloud Hosting"
+  ],
+  metrics: [
+    { label: "Teratas", value: "100+" },
+    { label: "Keselamatan", value: "97%" }
+  ]
+}
+{
+  title: "Webapps POS Untuk Restoran",
+  description:
+    "Aplikasi web POS (Point of Sale) untuk restoran yang memudahkan pengelolaan pesanan, inventaris, dan laporan penjualan. Dirancang untuk meningkatkan efisiensi operasional dan pengalaman pelanggan di restoran.",
+  image: "/resto.png",
+  category: "Restaurant POS Web App",
+  technologies: [
+    "React.js",
+    "Firebase",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "Cloud Hosting"
+  ],
+  metrics: [
+    { label: "Resto - Kafe Terbantu", value: "500+" },
+    { label: "Kepuasan User", value: "97%" }
+  ]
+}
 
 
 
