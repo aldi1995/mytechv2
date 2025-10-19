@@ -10,7 +10,12 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Team from "./components/Team";
 import Services from "./components/Services";
+import Web from "./components/Web";
+import MobileApps from "./components/MobileApps";
+import Consulting from "./components/Consulting";
 import Portfolio from "./components/Portfolio";
+import Mobile from "./components/Mobile";
+import Product from "./components/Product";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -55,7 +60,12 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/team" element={<Team />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/web" element={<Web />} />
+          <Route path="/mobileapps" element={<MobileApps />} />
+          <Route path="/consulting" element={<Consulting />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/mobile" element={<Mobile />} />
+          <Route path="/product" element={<Product />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
