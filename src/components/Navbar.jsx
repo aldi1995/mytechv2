@@ -22,6 +22,7 @@ const Navbar = () => {
     { title: "Beranda", href: "/" },
     { title: "Tentang Kami", href: "/about" },
     { title: "Team Kami", href: "/team" },
+    { title: "Blog", href: "/blog" },
     {
       title: "Layanan",
       children: [

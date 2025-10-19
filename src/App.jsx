@@ -9,6 +9,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Team from "./components/Team";
+import Blog from "./components/Blog";
+import BlogPost from "./components/BlogPost";
 import Services from "./components/Services";
 import Web from "./components/Web";
 import MobileApps from "./components/MobileApps";
@@ -75,6 +77,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/web" element={<Web />} />
           <Route path="/mobileapps" element={<MobileApps />} />
