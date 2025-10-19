@@ -20,6 +20,7 @@ import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// Scroll ke atas setiap ganti route
 const ScrollToTop = () => {
   const location = useLocation();
 
@@ -30,8 +31,24 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Layout utama (Navbar + Footer + Tawk.to)
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Tawk.to Script
+  useEffect(() => {
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/68f4ed4e5eca4d194faab6d3/1j7ubtv00";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
@@ -42,9 +59,8 @@ const Layout = ({ children }) => {
   );
 };
 
-// ✅ Hanya Hero (tanpa About, Services, Portfolio, Contact)
+// Halaman
 const HomePage = () => <Hero />;
-
 const AboutPage = () => <About />;
 const ServicesPage = () => <Services />;
 const PortfolioPage = () => <Portfolio />;
