@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import blogPosts from "../data/blogData";
+import blogPosts from "../Data/blogData";
 
 const Blog = () => {
   const POSTS_PER_BATCH = 3;
@@ -8,19 +8,22 @@ const Blog = () => {
   const [hasMore, setHasMore] = useState(true);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     loadMore();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const loadMore = () => {
-    const currentLength = visiblePosts.length;
-    const nextPosts = blogPosts.slice(
-      currentLength,
-      currentLength + POSTS_PER_BATCH
-    );
-    setVisiblePosts([...visiblePosts, ...nextPosts]);
-    if (currentLength + nextPosts.length >= blogPosts.length) setHasMore(false);
+    setVisiblePosts((prevPosts) => {
+      const currentLength = prevPosts.length;
+      const nextPosts = blogPosts.slice(
+        currentLength,
+        currentLength + POSTS_PER_BATCH
+      );
+      if (currentLength + nextPosts.length >= blogPosts.length) setHasMore(false);
+      return [...prevPosts, ...nextPosts];
+    });
   };
 
   const handleScroll = () => {
