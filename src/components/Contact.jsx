@@ -83,12 +83,14 @@ const Contact = () => {
       success: {
         icon: CheckCircle2,
         text: "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.",
-        className: "bg-green-50 border-green-200 text-green-800",
+        className:
+          "bg-green-50 dark:bg-green-900/30 border-green-200 dark:border-green-800 text-green-800 dark:text-green-300",
       },
       error: {
         icon: XCircle,
         text: "Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.",
-        className: "bg-red-50 border-red-200 text-red-800",
+        className:
+          "bg-red-50 dark:bg-red-900/30 border-red-200 dark:border-red-800 text-red-800 dark:text-red-300",
       },
     };
 
@@ -114,24 +116,24 @@ const Contact = () => {
 
   return (
     <section
-      className="relative py-20 sm:py-24 bg-white"
+      className="relative py-20 sm:py-24 bg-white dark:bg-slate-900 transition-colors duration-300"
       aria-label="Bagian Hubungi Kami"
     >
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-y-0 left-0 w-1/2 bg-slate-50/50" />
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-slate-50/50 dark:bg-slate-800/50" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Formulir Kontak */}
-          <div className="relative bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+          <div className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-slate-100 dark:border-slate-700">
             <h2
-              className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2"
+              className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-2"
               id="contact-form-title"
             >
               Hubungi Kami
             </h2>
-            <p className="text-slate-600 mb-4">
+            <p className="text-slate-600 dark:text-slate-300 mb-4">
               Mari kita diskusikan bagaimana kami dapat membantu mengembangkan
               bisnis Anda.
             </p>
@@ -144,86 +146,69 @@ const Contact = () => {
               aria-labelledby="contact-form-title"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-sm font-medium text-slate-700 mb-1"
-                  >
-                    Nama Depan <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="firstName"
-                    name="firstName"
-                    type="text"
-                    required
-                    value={formData.firstName}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="lastName"
-                    className="block text-sm font-medium text-slate-700 mb-1"
-                  >
-                    Nama Belakang <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="lastName"
-                    name="lastName"
-                    type="text"
-                    required
-                    value={formData.lastName}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200"
-                    placeholder="Doe"
-                  />
-                </div>
+                {[
+                  { id: "firstName", label: "Nama Depan", placeholder: "John" },
+                  { id: "lastName", label: "Nama Belakang", placeholder: "Doe" },
+                ].map((f) => (
+                  <div key={f.id}>
+                    <label
+                      htmlFor={f.id}
+                      className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
+                    >
+                      {f.label} <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      id={f.id}
+                      name={f.id}
+                      type="text"
+                      required
+                      value={formData[f.id]}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200"
+                      placeholder={f.placeholder}
+                    />
+                  </div>
+                ))}
               </div>
 
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-slate-700 mb-1"
-                >
-                  Email <span className="text-red-500">*</span>
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200"
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="phone"
-                  className="block text-sm font-medium text-slate-700 mb-1"
-                >
-                  Nomor Telepon <span className="text-red-500">*</span>
-                </label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  required
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200"
-                  placeholder="(123) 456-7890"
-                />
-              </div>
+              {[
+                {
+                  id: "email",
+                  label: "Email",
+                  type: "email",
+                  placeholder: "john@example.com",
+                },
+                {
+                  id: "phone",
+                  label: "Nomor Telepon",
+                  type: "tel",
+                  placeholder: "(123) 456-7890",
+                },
+              ].map((f) => (
+                <div key={f.id}>
+                  <label
+                    htmlFor={f.id}
+                    className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
+                  >
+                    {f.label} <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    id={f.id}
+                    name={f.id}
+                    type={f.type}
+                    required
+                    value={formData[f.id]}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200"
+                    placeholder={f.placeholder}
+                  />
+                </div>
+              ))}
 
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-slate-700 mb-1"
+                  className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
                 >
                   Pesan <span className="text-red-500">*</span>
                 </label>
@@ -234,7 +219,7 @@ const Contact = () => {
                   required
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200 resize-y min-h-[100px]"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200 resize-y min-h-[100px]"
                   placeholder="Bagaimana kami dapat membantu Anda?"
                 />
               </div>
@@ -273,13 +258,13 @@ const Contact = () => {
           {/* Informasi Kontak + MAPS */}
           <div className="lg:pl-8 space-y-8">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-2">
                 Mari Bangun Sesuatu yang
                 <span className="block mt-2 bg-gradient-to-r from-blue-700 to-sky-600 bg-clip-text text-transparent">
                   Luar Biasa Bersama
                 </span>
               </h2>
-              <p className="text-lg text-slate-600 mt-4">
+              <p className="text-lg text-slate-600 dark:text-slate-300 mt-4">
                 Baik Anda memiliki pertanyaan tentang layanan kami, membutuhkan
                 solusi khusus, atau hanya ingin menyapa, kami dengan senang
                 hati akan mendengar dari Anda.
@@ -290,7 +275,7 @@ const Contact = () => {
               {contactInfo.map((item) => (
                 <div
                   key={item.title}
-                  className="group relative bg-slate-50 rounded-2xl p-6 transition-all duration-200 hover:shadow-md hover:-translate-y-1"
+                  className="group relative bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 transition-all duration-200 hover:shadow-md hover:-translate-y-1 border border-transparent dark:border-slate-700"
                   aria-label={item.ariaLabel}
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-700/5 to-sky-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
@@ -302,12 +287,12 @@ const Contact = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                      <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
                         {item.title}
                       </h3>
                       <div className="space-y-1">
                         {item.details.map((detail, idx) => (
-                          <p key={idx} className="text-slate-600">
+                          <p key={idx} className="text-slate-600 dark:text-slate-300">
                             {detail}
                           </p>
                         ))}
@@ -318,7 +303,7 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="mt-10 rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+            <div className="mt-10 rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700">
               <iframe
                 title="Lokasi Kantor MyTech Indonesia"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.830215269141!2d107.59314147475802!3d-6.867441367188985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6ed56b7a251%3A0x2f4f9c93bb84c40!2sJl.%20Cipedes%20Tengah%20No.35%2C%20Sukagalih%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040163!5e0!3m2!1sid!2sid!4v1739568888888!5m2!1sid!2sid"

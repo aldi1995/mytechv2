@@ -23,7 +23,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-blue-900 to-slate-950 text-white py-12">
+    <footer className="bg-gradient-to-b from-blue-900 to-slate-950 dark:from-slate-900 dark:to-black text-white py-12 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Informasi Perusahaan */}
@@ -33,7 +33,7 @@ const Footer = () => {
                 Mytech Indonesia
               </span>
             </div>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-slate-300 dark:text-slate-400 leading-relaxed">
               Mengubah visi digital menjadi kenyataan. Kami menciptakan solusi
               inovatif yang membantu bisnis berkembang di era digital.
             </p>
@@ -46,7 +46,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <link.icon className="w-5 h-5 text-slate-300 hover:text-white transition-colors" />
+                  <link.icon className="w-5 h-5 text-slate-300 dark:text-slate-400 hover:text-white transition-colors" />
                 </a>
               ))}
             </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.url}
-                    className="text-slate-300 hover:text-sky-400 transition-colors duration-300"
+                    className="text-slate-300 dark:text-slate-400 hover:text-sky-400 transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -77,7 +77,7 @@ const Footer = () => {
               Hubungi Kami
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-center text-slate-300">
+              <li className="flex items-center text-slate-300 dark:text-slate-400">
                 <Phone className="w-5 h-5 mr-3 text-sky-400" />
                 <a
                   href="tel:+6285156928164"
@@ -87,7 +87,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="flex items-center text-slate-300">
+              <li className="flex items-center text-slate-300 dark:text-slate-400">
                 <Mail className="w-5 h-5 mr-3 text-sky-400" />
                 <a
                   href="mailto:hello@mytech-indonesia.web.id"
@@ -97,7 +97,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="flex items-start text-slate-300">
+              <li className="flex items-start text-slate-300 dark:text-slate-400">
                 <MapPin className="w-5 h-5 mr-3 text-sky-400 mt-1" />
                 <a
                   href="https://www.google.com/maps?q=Jl.+Cipedes+Tengah+No.35,+Sukagalih,+Sukajadi,+Bandung,+Jawa+Barat+40163"
@@ -118,7 +118,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
               Buletin
             </h3>
-            <p className="text-slate-300">
+            <p className="text-slate-300 dark:text-slate-400">
               Berlangganan buletin kami untuk mendapatkan pembaruan dan insight
               terbaru.
             </p>
@@ -127,7 +127,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Masukkan email Anda"
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-blue-400 text-white placeholder-slate-400 transition-colors"
+                  className="w-full px-4 py-3 bg-white/5 dark:bg-slate-800 border border-white/10 dark:border-slate-700 rounded-lg focus:outline-none focus:border-blue-400 text-white placeholder-slate-400 transition-colors"
                 />
               </div>
               <button
@@ -143,7 +143,7 @@ const Footer = () => {
         {/* Bagian Bawah Footer */}
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-slate-400 text-sm">
+            <p className="text-slate-400 dark:text-slate-500 text-sm">
               © {currentYear} PT. MYTECH TEKNOLOGI INDONESIA | Seluruh hak cipta dilindungi.
             </p>
           </div>

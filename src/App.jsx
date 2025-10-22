@@ -25,17 +25,36 @@ import Footer from "./components/Footer";
 // Scroll ke atas setiap ganti route
 const ScrollToTop = () => {
   const location = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
-
   return null;
 };
 
-// Layout utama (Navbar + Footer + Tawk.to)
+// Layout utama (Navbar + Footer + Tawk.to + Dark Mode)
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Inisialisasi dark mode dari localStorage
+  useEffect(() => {
+    const savedMode = localStorage.getItem("theme");
+    if (savedMode === "dark") {
+      setDarkMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
+  // Toggle dark mode & simpan ke localStorage
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   // Tawk.to Script
   useEffect(() => {
@@ -53,8 +72,8 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} darkMode={darkMode} setDarkMode={setDarkMode} />
       <main>{children}</main>
       <Footer />
     </div>

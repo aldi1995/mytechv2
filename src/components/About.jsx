@@ -34,11 +34,11 @@ const About = () => {
   ];
 
   return (
-    <section className="relative py-32 bg-[#f9fafc]">
+    <section className="relative py-32 bg-[#f9fafc] dark:bg-gray-900 transition-colors duration-500">
       {/* Latar belakang gradasi lembut */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-full h-full">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] aspect-[1/0.7] bg-gradient-to-b from-white via-blue-50/30 to-transparent rounded-[50%] blur-3xl" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] aspect-[1/0.7] bg-gradient-to-b from-white via-blue-50/30 to-transparent dark:from-gray-900 dark:via-gray-800/40 dark:to-transparent rounded-[50%] blur-3xl" />
         </div>
       </div>
 
@@ -50,19 +50,26 @@ const About = () => {
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900 lg:text-6xl">
+          <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
             Pelopor
             <span className="block mt-2 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
               Kemahiran Teknologi
             </span>
           </h2>
 
-          <p className="mt-6 text-xl text-slate-600 leading-relaxed">
-            Didirikan pada tahun 2023, Mytech Indonesia hadir sebagai mitra digital bagi bisnis dan organisasi yang ingin bertransformasi di era teknologi.
-
-Kami mengembangkan solusi digital mulai dari website, aplikasi bisnis, hingga layanan sistem informasi yang dirancang untuk meningkatkan efisiensi, visibilitas, dan produktivitas klien kami.
-
-Mytech Indonesia percaya bahwa teknologi bukan sekadar alat, tetapi jembatan menuju pertumbuhan — dan kami ada untuk membantu Anda melewatinya.
+          <p className="mt-6 text-xl text-slate-600 dark:text-gray-300 leading-relaxed">
+            Didirikan pada tahun 2023, Mytech Indonesia hadir sebagai mitra
+            digital bagi bisnis dan organisasi yang ingin bertransformasi di era
+            teknologi. <br />
+            <br />
+            Kami mengembangkan solusi digital mulai dari website, aplikasi
+            bisnis, hingga layanan sistem informasi yang dirancang untuk
+            meningkatkan efisiensi, visibilitas, dan produktivitas klien kami.
+            <br />
+            <br />
+            Mytech Indonesia percaya bahwa teknologi bukan sekadar alat, tetapi
+            jembatan menuju pertumbuhan — dan kami ada untuk membantu Anda
+            melewatinya.
           </p>
         </div>
 
@@ -71,9 +78,9 @@ Mytech Indonesia percaya bahwa teknologi bukan sekadar alat, tetapi jembatan men
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group relative bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-blue-900/10 hover:-translate-y-1"
+              className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-50 to-white dark:from-gray-700/30 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="relative">
                 <div
@@ -82,11 +89,11 @@ Mytech Indonesia percaya bahwa teknologi bukan sekadar alat, tetapi jembatan men
                   <feature.icon size={28} />
                 </div>
 
-                <h3 className="mt-6 text-2xl font-semibold text-slate-900">
+                <h3 className="mt-6 text-2xl font-semibold text-slate-900 dark:text-white">
                   {feature.title}
                 </h3>
 
-                <p className="mt-4 text-slate-600 leading-relaxed">
+                <p className="mt-4 text-slate-600 dark:text-gray-300 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -95,7 +102,7 @@ Mytech Indonesia percaya bahwa teknologi bukan sekadar alat, tetapi jembatan men
         </div>
 
         {/* Statistik */}
-        <div className="mt-24 rounded-3xl bg-blue-900 p-12 sm:p-16 relative overflow-hidden">
+        <div className="mt-24 rounded-3xl bg-blue-900 dark:bg-indigo-950 p-12 sm:p-16 relative overflow-hidden transition-colors duration-500">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-700/20 to-indigo-900/20" />
           <div className="relative grid grid-cols-2 gap-12 md:grid-cols-4">
             {stats.map((stat) => (
@@ -104,7 +111,7 @@ Mytech Indonesia percaya bahwa teknologi bukan sekadar alat, tetapi jembatan men
                 className="text-center group cursor-pointer transition-all duration-300 hover:-translate-y-1"
               >
                 <p className="text-4xl font-bold text-white">{stat.number}</p>
-                <p className="mt-2 text-sm font-medium text-blue-100">
+                <p className="mt-2 text-sm font-medium text-blue-100 dark:text-blue-300">
                   {stat.label}
                 </p>
               </div>

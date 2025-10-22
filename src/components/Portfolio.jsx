@@ -7,8 +7,8 @@ const Portfolio = () => {
 
   const categories = [];
 
-  const projects = [
-  {
+  const projects = [
+    {
     title: "Remotely.id",
     description:
       "Platform digital terpadu untuk manajemen kerja jarak jauh yang mencakup HRMS, manajemen proyek, payroll, absensi, dan komunikasi tim dalam satu dashboard. Dirancang untuk meningkatkan produktivitas, transparansi, dan kolaborasi lintas industri.",
@@ -501,35 +501,35 @@ const Portfolio = () => {
     { label: "Kepuasan User", value: "97%" }
   ]
 },
-];
+  ];
 
   return (
-    <section className="relative py-32 bg-slate-50">
-      {/* Latar belakang gradasi biru */}
+    <section className="relative py-32 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+      {/* Latar belakang gradasi */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-full h-full">
-          <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
-          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000" />
-          <div className="absolute top-0 -right-4 w-72 h-72 bg-cyan-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000" />
+          <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-200 dark:bg-blue-900 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-sky-200 dark:bg-sky-800 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000" />
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-cyan-200 dark:bg-cyan-900 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000" />
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group mb-8">
             <span className="text-sm font-medium">Portofolio Kami</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900 lg:text-6xl">
+          <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
             Menampilkan
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">
               Karya Kami
             </span>
           </h2>
 
-          <p className="mt-6 text-xl text-slate-600 leading-relaxed">
+          <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
             Wujudkan transformasi bisnis Anda dengan solusi digital komprehensif
             dari kami — dirancang untuk mendorong inovasi dan pertumbuhan
             berkelanjutan.
@@ -545,7 +545,7 @@ const Portfolio = () => {
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 activeFilter === category
                   ? "bg-blue-600 text-white shadow-lg shadow-blue-500/25"
-                  : "bg-white text-slate-600 hover:bg-slate-50"
+                  : "bg-white text-slate-600 hover:bg-slate-50 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
               }`}
             >
               {category}
@@ -563,7 +563,7 @@ const Portfolio = () => {
             .map((project) => (
               <div
                 key={project.title}
-                className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500"
+                className="group relative bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500"
               >
                 {/* Gambar proyek */}
                 <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
@@ -593,22 +593,24 @@ const Portfolio = () => {
                 {/* Info proyek */}
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-600">
+                    <span className="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400">
                       {project.category}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">{project.description}</p>
+                  <p className="text-gray-600 dark:text-gray-400 mb-6">
+                    {project.description}
+                  </p>
 
                   {/* Teknologi */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gray-50 text-sm text-gray-600"
+                        className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gray-50 dark:bg-slate-700 text-sm text-gray-600 dark:text-gray-300"
                       >
                         <Code size={14} />
                         {tech}
@@ -616,7 +618,7 @@ const Portfolio = () => {
                     ))}
                   </div>
 
-                  <button className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium group">
+                  <button className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium group">
                     <span>Lihat Detail</span>
                     <ExternalLink className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </button>
