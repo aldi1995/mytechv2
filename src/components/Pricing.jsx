@@ -70,7 +70,135 @@ const Pricing = () => {
         },
       ],
     },
-    // (Kategori lain tetap sama seperti sebelumnya)
+    {
+      category: "Pengembangan Website",
+      tagline: "Solusi digital modern untuk bisnis & brand Anda",
+      plans: [
+        {
+          name: "Basic Website",
+          monthly: "Rp2.000.000",
+          yearly: "Rp20.000.000",
+          gradient: "from-green-600 to-emerald-500",
+          features: [
+            "Landing page profesional",
+            "Optimasi SEO dasar",
+            "Desain responsif semua perangkat",
+            "Gratis domain 1 tahun",
+          ],
+        },
+        {
+          name: "Business Website",
+          monthly: "Rp3.500.000",
+          yearly: "Rp35.000.000",
+          gradient: "from-emerald-600 to-green-600",
+          popular: true,
+          features: [
+            "Multi-page (Home, About, Services, Contact)",
+            "Integrasi WhatsApp & Maps",
+            "Formulir kontak dinamis",
+            "Dukungan teknis 6 bulan",
+          ],
+        },
+        {
+          name: "E-Commerce Pro",
+          monthly: "Rp6.000.000",
+          yearly: "Rp60.000.000",
+          gradient: "from-teal-600 to-green-500",
+          features: [
+            "Sistem katalog & keranjang belanja",
+            "Integrasi pembayaran (Midtrans/Xendit)",
+            "Dashboard admin & laporan penjualan",
+            "Dukungan prioritas 12 bulan",
+          ],
+        },
+      ],
+    },
+    {
+      category: "Pengembangan Mobile Apps",
+      tagline: "Aplikasi Android & iOS untuk memperluas jangkauan bisnis Anda",
+      plans: [
+        {
+          name: "Starter App",
+          monthly: "Rp8.000.000",
+          yearly: "Rp75.000.000",
+          gradient: "from-purple-600 to-indigo-500",
+          features: [
+            "Aplikasi Android (Play Store ready)",
+            "Autentikasi pengguna dasar",
+            "Notifikasi push sederhana",
+            "Support bugfix 3 bulan",
+          ],
+        },
+        {
+          name: "Pro App",
+          monthly: "Rp15.000.000",
+          yearly: "Rp140.000.000",
+          gradient: "from-indigo-600 to-violet-600",
+          popular: true,
+          features: [
+            "Android & iOS (Cross-platform Flutter/React Native)",
+            "Integrasi API & database cloud",
+            "Desain UI/UX profesional",
+            "Dukungan teknis prioritas 6 bulan",
+          ],
+        },
+        {
+          name: "Custom App",
+          monthly: "Hubungi Kami",
+          yearly: "Hubungi Kami",
+          gradient: "from-violet-700 to-purple-500",
+          features: [
+            "Integrasi sistem backend kompleks",
+            "Deployment multi-environment",
+            "Maintenance tahunan",
+            "Konsultasi fitur advance & scaling",
+          ],
+        },
+      ],
+    },
+    {
+      category: "IT Consulting & Maintenance",
+      tagline: "Pendampingan teknologi dan pemeliharaan sistem profesional",
+      plans: [
+        {
+          name: "Consult Basic",
+          monthly: "Rp1.500.000",
+          yearly: "Rp15.000.000",
+          gradient: "from-orange-600 to-amber-500",
+          features: [
+            "Analisis kebutuhan sistem",
+            "Rekomendasi solusi digital",
+            "Laporan konsultasi bulanan",
+            "Support teknis 1 bulan",
+          ],
+        },
+        {
+          name: "Consult Pro",
+          monthly: "Rp3.000.000",
+          yearly: "Rp30.000.000",
+          gradient: "from-amber-600 to-orange-600",
+          popular: true,
+          features: [
+            "Pendampingan pengembangan sistem",
+            "Optimasi performa aplikasi",
+            "Audit keamanan & data",
+            "Support teknis prioritas 3 bulan",
+          ],
+        },
+        {
+          name: "Dedicated Support",
+          monthly: "Hubungi Kami",
+          yearly: "Hubungi Kami",
+          gradient: "from-orange-700 to-yellow-500",
+          features: [
+            "Tim IT khusus untuk perusahaan Anda",
+            "Monitoring sistem 24/7",
+            "Konsultasi dan upgrade rutin",
+            "Perjanjian SLA profesional",
+          ],
+        },
+      ],
+    },
   ];
 
   return (
@@ -96,7 +224,9 @@ const Pricing = () => {
         <div className="mt-8 flex justify-center items-center gap-3">
           <span
             className={`text-sm font-medium ${
-              !isYearly ? "text-blue-600 dark:text-blue-400" : "text-slate-500 dark:text-slate-400"
+              !isYearly
+                ? "text-blue-600 dark:text-blue-400"
+                : "text-slate-500 dark:text-slate-400"
             }`}
           >
             Bulanan
@@ -113,10 +243,13 @@ const Pricing = () => {
           </label>
           <span
             className={`text-sm font-medium ${
-              isYearly ? "text-blue-600 dark:text-blue-400" : "text-slate-500 dark:text-slate-400"
+              isYearly
+                ? "text-blue-600 dark:text-blue-400"
+                : "text-slate-500 dark:text-slate-400"
             }`}
           >
-            Tahunan <span className="ml-1 text-xs text-green-500">(Hemat 20%)</span>
+            Tahunan{" "}
+            <span className="ml-1 text-xs text-green-500">(Hemat 20%)</span>
           </span>
         </div>
       </div>
@@ -128,7 +261,9 @@ const Pricing = () => {
             <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-3">
               {cat.category}
             </h3>
-            <p className="text-slate-500 dark:text-slate-400 mb-10">{cat.tagline}</p>
+            <p className="text-slate-500 dark:text-slate-400 mb-10">
+              {cat.tagline}
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {cat.plans.map((plan) => (
