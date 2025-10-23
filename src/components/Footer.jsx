@@ -18,6 +18,7 @@ const Footer = () => {
   const quickLinks = [
     { name: "Portofolio", url: "/portfolio" },
     { name: "Harga", url: "/pricing" },
+    { name: "Layanan Kami", url: "/services" },
     { name: "Produk SaaS", url: "/product" },
     { name: "Kontak", url: "/contact" },
   ];
