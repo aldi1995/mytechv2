@@ -38,7 +38,7 @@ const Blog = () => {
 
   return (
     <section className="relative py-32 bg-[#f9fafc] dark:bg-[#0f172a] overflow-hidden transition-colors duration-500">
-      {/* Soft gradient background */}
+      {/* Latar belakang gradasi lembut */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-full h-full">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] aspect-[1/0.7] bg-gradient-to-b from-white via-blue-50/30 to-transparent dark:from-slate-800 dark:via-slate-900/60 dark:to-transparent rounded-[50%] blur-3xl" />
@@ -46,26 +46,26 @@ const Blog = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
+        {/* Bagian Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900 text-white shadow-lg hover:shadow-xl transition-all duration-300 mb-6 group cursor-pointer">
-            <span className="text-sm font-medium">Articles & Insights</span>
+            <span className="text-sm font-medium">Artikel & Wawasan</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Insights from{" "}
+            Wawasan dari{" "}
             <span className="bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
-              Our Team
+              Tim Kami
             </span>
           </h2>
           <p className="mt-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            Explore articles, insights, and the latest updates about technology,
-            innovation, and the projects developed by MyTech Indonesia.
+            Jelajahi artikel, wawasan, dan pembaruan terbaru seputar teknologi,
+            inovasi, serta proyek-proyek yang dikembangkan oleh MyTech Indonesia.
           </p>
         </div>
 
-        {/* Articles Grid */}
+        {/* Daftar Artikel */}
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {visiblePosts.map((post) => (
             <div
@@ -86,7 +86,7 @@ const Blog = () => {
                   to={`/blog/${post.id}`}
                   className="inline-flex items-center text-blue-900 dark:text-blue-400 font-medium hover:underline group-hover:translate-x-1 transition-transform duration-300"
                 >
-                  Read More
+                  Baca Selengkapnya
                   <ArrowUpRight className="ml-2 w-5 h-5" />
                 </Link>
               </div>
@@ -96,7 +96,7 @@ const Blog = () => {
 
         {!hasMore && (
           <p className="text-center mt-16 text-slate-500 dark:text-slate-400 text-lg">
-            All articles have been displayed 🎉
+            Semua artikel telah ditampilkan 🎉
           </p>
         )}
       </div>

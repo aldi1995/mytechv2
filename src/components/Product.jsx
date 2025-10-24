@@ -3,50 +3,50 @@ import { ArrowUpRight, CheckCircle2, ExternalLink } from "lucide-react";
 import LazyImage from "./LazyImage";
 
 const Product = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Semua");
 
-  const categories = ["All", "Business", "Education", "Productivity", "Finance"];
+  const categories = ["Semua", "Bisnis", "Pendidikan", "Produktivitas", "Keuangan"];
 
   const products = [
     {
       name: "Remotely SaaS",
       tagline:
-        "Remote work management, HRMS, payroll & team communication in one dashboard.",
+        "Manajemen kerja jarak jauh, HRMS, payroll & komunikasi tim dalam satu dashboard.",
       image: "/remotely.jpg",
-      category: "Productivity",
-      price: "$9.99 /month",
+      category: "Produktivitas",
+      price: "Rp 150.000 /bulan",
       features: [
-        "Automated project & attendance management",
-        "Digital HR & payroll system",
-        "Built-in chat & file sharing integration",
+        "Manajemen proyek & absensi otomatis",
+        "Sistem HR & payroll digital",
+        "Chat & berbagi file terintegrasi",
       ],
       link: "https://remotely.gt.tc",
     },
     {
       name: "MyERP Cloud",
       tagline:
-        "Integrated ERP system to manage finance, inventory, and business operations seamlessly.",
+        "Sistem ERP terintegrasi untuk mengelola keuangan, inventaris, dan operasional bisnis dengan mudah.",
       image: "/erp.png",
-      category: "Business",
-      price: "$19.99 /month",
+      category: "Bisnis",
+      price: "Rp 300.000 /bulan",
       features: [
-        "Financial & accounting management",
-        "Automated inventory & purchasing",
-        "Real-time analytics dashboard",
+        "Manajemen keuangan & akuntansi",
+        "Inventaris & pembelian otomatis",
+        "Dashboard analitik real-time",
       ],
       link: "#",
     },
     {
       name: "MyPOS Cloud",
       tagline:
-        "Modern POS system for restaurants and cafés with real-time sales dashboard.",
+        "Sistem POS modern untuk restoran dan kafe dengan dashboard penjualan real-time.",
       image: "/resto.png",
-      category: "Business",
-      price: "$12.99 /month",
+      category: "Bisnis",
+      price: "Rp 200.000 /bulan",
       features: [
-        "Order & stock management",
-        "Automated sales reports",
-        "Multi-device support",
+        "Manajemen pesanan & stok",
+        "Laporan penjualan otomatis",
+        "Dukungan multi-perangkat",
       ],
       link: "#",
     },
@@ -67,20 +67,20 @@ const Product = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Our Products</span>
+            <span className="text-sm font-medium">Produk Kami</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Our
+            Solusi
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">
-              SaaS Solutions
+              SaaS Kami
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-            Discover ready-to-use SaaS solutions to help your business grow faster,
-            more efficiently, and with modern automation.
+            Temukan solusi SaaS siap pakai untuk membantu bisnis Anda berkembang lebih cepat,
+            efisien, dan dengan otomatisasi modern.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ const Product = () => {
           {products
             .filter(
               (product) =>
-                activeFilter === "All" || product.category === activeFilter
+                activeFilter === "Semua" || product.category === activeFilter
             )
             .map((product) => (
               <div
@@ -158,11 +158,11 @@ const Product = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center w-full gap-2 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 dark:hover:bg-blue-500 transition-all duration-300"
                     >
-                      Try for Free
+                      Coba Gratis
                       <ExternalLink className="w-4 h-4" />
                     </a>
                     <button className="inline-flex items-center justify-center w-full gap-2 border border-blue-200 dark:border-blue-700 py-3 rounded-xl text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 font-medium transition-all duration-300">
-                      Details
+                      Detail
                     </button>
                   </div>
                 </div>

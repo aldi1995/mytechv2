@@ -7,48 +7,48 @@ const Team = () => {
       name: "Renaldi Bagus Widakdo",
       role: "CEO & Lead Developer",
       description:
-        "Leads the strategic direction of MyTech Indonesia, ensuring every project is delivered with innovation and top-tier quality.",
+        "Memimpin arah strategis MyTech Indonesia, memastikan setiap proyek diselesaikan dengan inovasi dan kualitas terbaik.",
     },
     {
       name: "Melika Candra Widyani Mas",
       role: "Project Manager",
       description:
-        "Bridges communication between clients and developers to ensure every project is completed on time and meets expectations.",
+        "Menjembatani komunikasi antara klien dan pengembang agar setiap proyek selesai tepat waktu dan sesuai harapan.",
     },
     {
       name: "Dwi Santoso",
       role: "UI/UX Designer",
       description:
-        "Designs intuitive user experiences with modern and functional interface designs that enhance usability and aesthetics.",
+        "Mendesain pengalaman pengguna yang intuitif dengan antarmuka modern dan fungsional yang meningkatkan kegunaan dan estetika.",
     },
     {
       name: "Andi Pratama",
       role: "Backend Engineer",
       description:
-        "Builds secure and reliable server architecture to ensure optimal application performance and scalability.",
+        "Membangun arsitektur server yang aman dan handal untuk memastikan performa dan skalabilitas aplikasi optimal.",
     },
   ];
 
   const values = [
     {
       icon: Users,
-      title: "Collaborative",
+      title: "Kolaboratif",
       description:
-        "We believe that strong teamwork leads to exceptional solutions and long-term success.",
+        "Kami percaya bahwa kerja tim yang solid menghasilkan solusi luar biasa dan kesuksesan jangka panjang.",
       gradient: "from-blue-700 to-indigo-800",
     },
     {
       icon: Star,
-      title: "Professional",
+      title: "Profesional",
       description:
-        "Each team member is highly dedicated to maintaining excellence in every aspect of their work.",
+        "Setiap anggota tim berdedikasi tinggi untuk menjaga keunggulan dalam setiap aspek pekerjaan mereka.",
       gradient: "from-indigo-800 to-blue-900",
     },
     {
       icon: Code,
-      title: "Innovative",
+      title: "Inovatif",
       description:
-        "We constantly explore new ways to create relevant and impactful technology for our clients.",
+        "Kami terus mengeksplorasi cara baru untuk menciptakan teknologi yang relevan dan berdampak bagi klien kami.",
       gradient: "from-blue-800 to-sky-700",
     },
   ];
@@ -66,22 +66,19 @@ const Team = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900 text-white shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Our Team</span>
+            <span className="text-sm font-medium">Tim Kami</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            The Professionals Behind
+            Para Profesional di Balik
             <span className="block mt-2 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
               MyTech Indonesia
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-gray-300 leading-relaxed">
-            Our team consists of passionate young professionals in the
-            technology field. Since 2023, we’ve been committed to building
-            innovative digital solutions that help businesses adapt and thrive
-            in the era of digital transformation.
+            Tim kami terdiri dari profesional muda penuh semangat di bidang teknologi. Sejak 2023, kami berkomitmen membangun solusi digital inovatif yang membantu bisnis beradaptasi dan berkembang di era transformasi digital.
           </p>
         </div>
 

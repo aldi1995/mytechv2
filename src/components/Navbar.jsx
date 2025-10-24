@@ -30,28 +30,28 @@ const Navbar = () => {
 
   // ✅ Main menu + dropdown items
   const menuItems = [
-    { title: "Home", href: "/" },
-    { title: "About Us", href: "/about" },
-    { title: "Our Team", href: "/team" },
+    { title: "Beranda", href: "/" },
+    { title: "Tentang Kami", href: "/about" },
+    { title: "Tim Kami", href: "/team" },
     { title: "Blog", href: "/blog" },
     {
-      title: "Services",
+      title: "Layanan",
       children: [
-        { title: "Website Development", href: "/web" },
-        { title: "Mobile Applications", href: "/mobileapps" },
-        { title: "IT Consulting", href: "/consulting" },
-        { title: "SaaS Products", href: "/product" },
-        { title: "Pricing", href: "/pricing" },
+        { title: "Pengembangan Website", href: "/web" },
+        { title: "Aplikasi Mobile", href: "/mobileapps" },
+        { title: "Konsultasi IT", href: "/consulting" },
+        { title: "Produk SaaS", href: "/product" },
+        { title: "Harga", href: "/pricing" },
       ],
     },
     {
-      title: "Portfolio",
+      title: "Portofolio",
       children: [
-        { title: "Client Websites", href: "/portfolio" },
-        { title: "Android Apps", href: "/mobile" },
+        { title: "Website Klien", href: "/portfolio" },
+        { title: "Aplikasi Android", href: "/mobile" },
       ],
     },
-    { title: "Contact", href: "/contact" },
+    { title: "Kontak", href: "/contact" },
   ];
 
   const closeMenu = () => setIsOpen(false);
@@ -219,7 +219,7 @@ const Navbar = () => {
             className="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-600 dark:from-indigo-500 dark:to-sky-400 text-white rounded-lg font-medium text-base hover:from-blue-500 hover:to-sky-500 transition-all duration-300 text-center shadow-md hover:shadow-sky-500/25"
             onClick={closeMenu}
           >
-            Get Started
+            Mulai Sekarang
           </Link>
         </div>
       </div>

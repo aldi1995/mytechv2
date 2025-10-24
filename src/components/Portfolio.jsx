@@ -3,211 +3,211 @@ import { ExternalLink, ArrowUpRight, Code } from "lucide-react";
 import LazyImage from "./LazyImage";
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Semua");
 
   const categories = [
-    "All",
-    "Website Development",
-    "App Development",
-    "System Integration",
-    "UI/UX Design",
+    "Semua",
+    "Pengembangan Website",
+    "Pengembangan Aplikasi",
+    "Integrasi Sistem",
+    "Desain UI/UX",
   ];
 
   const projects = [
     {
-  title: "Remotely.id",
-  description:
-    "An integrated digital platform for remote work management that includes HRMS, project management, payroll, attendance, and team communication — all in one dashboard. Designed to boost productivity, transparency, and collaboration across industries.",
-  image: "/remotely.jpg",
-  category: "Web Platform",
-  technologies: [
-    "Next.js",
-    "Node.js",
-    "Express.js",
-    "TypeScript",
-    "MongoDB",
-    "Tailwind CSS",
-    "Vercel",
-    "REST API",
-  ],
-  metrics: [
-    { label: "Team Productivity", value: "+35%" },
-    { label: "Data Efficiency", value: "99.9%" },
-  ],
-},
+    title: "Remotely.id",
+    description:
+      "Platform digital terpadu untuk manajemen kerja jarak jauh yang mencakup HRMS, manajemen proyek, payroll, absensi, dan komunikasi tim dalam satu dashboard. Dirancang untuk meningkatkan produktivitas, transparansi, dan kolaborasi lintas industri.",
+    image: "/remotely.jpg",
+    category: "Web Platform",
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "MongoDB",
+      "Tailwind CSS",
+      "Vercel",
+      "REST API",
+    ],
+    metrics: [
+      { label: "Produktivitas Tim", value: "+35%" },
+      { label: "Efisiensi Data", value: "99.9%" },
+    ],
+  },
+  {
+    title: "E-Kantin Bina Persada School",
+    description:
+      "Aplikasi web modern untuk digitalisasi sistem kantin sekolah. Fitur mencakup top-up saldo siswa, voucher makan siang, laporan transaksi, dan otomatisasi layanan untuk efisiensi operasional dan pengalaman pengguna yang lebih baik.",
+    image: "/ekantin.png",
+    category: "Web Apps",
+    technologies: [
+      "Laravel 11",
+      "Inertia.js",
+      "Vue 3",
+      "Tailwind CSS",
+      "MySQL",
+      "REST API",
+    ],
+    metrics: [
+      { label: "Kecepatan Transaksi", value: "+40%" },
+      { label: "Efisiensi Operasional", value: "+30%" },
+    ],
+  },
+  {
+    title: "Jalin Sehat",
+    description:
+      "Aplikasi pendaftaran rumah sakit berbasis SaaS yang memudahkan pasien untuk mendaftar online, melihat jadwal dokter, dan mengelola data kesehatan dengan cepat dan aman.",
+    image: "/jalinsehat.jpg",
+    category: "Mobile & Web App",
+    technologies: [
+      "React Native",
+      "Next.js",
+      "Supabase",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    metrics: [
+      { label: "Pendaftaran Online", value: "+50%" },
+      { label: "Kepuasan Pengguna", value: "98%" },
+    ],
+  },
+  {
+    title: "Learning Hands",
+    description:
+      "Website preschool interaktif yang menggabungkan pembelajaran berbasis permainan dengan aktivitas edukatif, cerita interaktif, dan sumber daya untuk orang tua.",
+    image: "/learninghands.png",
+    category: "Education Website",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Tailwind CSS",
+      "Docker",
+    ],
+    metrics: [
+      { label: "Engagement Anak", value: "+60%" },
+      { label: "Ketersediaan Sistem", value: "99%" },
+    ],
+  },
+  {
+    title: "Fazar",
+    description:
+      "Website e-commerce dengan fitur katalog produk, manajemen pesanan, dan integrasi pembayaran. Fokus pada performa, keamanan, serta pengalaman pengguna yang optimal.",
+    image: "/fazar.png",
+    category: "E-Commerce Website",
+    technologies: [
+      "Next.js",
+      "Stripe API",
+      "TypeScript",
+      "MongoDB",
+      "Tailwind CSS",
+      "Cloudflare",
+    ],
+    metrics: [
+      { label: "Kecepatan Muat", value: "<2 detik" },
+      { label: "Tingkat Transaksi Berhasil", value: "99%" },
+    ],
+  },
+  {
+    title: "Chatting Apps | ChatMe!",
+    description:
+      "Aplikasi chat real-time berbasis web dengan pesan teks, gambar, video, dan suara. Menggunakan JWT untuk autentikasi dan WebSocket untuk komunikasi instan.",
+    image: "/chatz.jpg",
+    category: "Communication App",
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "Socket.IO",
+      "MongoDB",
+      "JWT Auth",
+      "Tailwind CSS",
+    ],
+    metrics: [
+      { label: "Pesan Real-time", value: "Instant <1 detik" },
+      { label: "Uptime Server", value: "99.8%" },
+    ],
+  },
+  {
+    title: "Website Wedding Organizer",
+    description:
+      "Platform online yang membantu calon pengantin merencanakan pernikahan. Tersedia katalog vendor, portofolio, dan alat budgeting digital.",
+    image: "/wedding.jpg",
+    category: "Service Website",
+    technologies: [
+      "Next.js",
+      "Supabase",
+      "Tailwind CSS",
+      "Prisma ORM",
+      "TypeScript",
+      "Vercel",
+    ],
+    metrics: [
+      { label: "Vendor Terdaftar", value: "50+" },
+      { label: "Kepuasan Pengguna", value: "97%" },
+    ],
+  },
+  {
+    title: "Website Bina Persada International School",
+    description:
+      "Website resmi sekolah internasional dengan informasi akademik, kegiatan, dan pendaftaran online.",
+    image: "/bp.jpg",
+    category: "School Website",
+    technologies: [
+      "Next.js",
+      "Sanity CMS",
+      "Tailwind CSS",
+      "Vercel",
+      "TypeScript",
+    ],
+    metrics: [
+      { label: "Siswa Terdaftar", value: "100+" },
+      { label: "Kepuasan Pengguna", value: "97%" },
+    ],
+  },
+  {
+    title: "Website LBH Inayah Filia",
+    description:
+      "Platform konsultasi hukum online dengan fitur formulir layanan, artikel hukum, dan manajemen klien.",
+    image: "/if.png",
+    category: "Legal First Aid Website",
+    technologies: [
+      "Next.js",
+      "Supabase",
+      "Tailwind CSS",
+      "Prisma ORM",
+      "TypeScript",
+      "Vercel",
+    ],
+    metrics: [
+      { label: "Klien Terbantu", value: "50+" },
+      { label: "Kepuasan Pengguna", value: "97%" },
+    ],
+  },
+  {
+    title: "Website Resmi Gereja GSK Bandung",
+    description:
+      "Website resmi Gereja GSK Bandung yang menyediakan jadwal ibadah dan pelayanan komunitas.",
+    image: "/gsk.png",
+    category: "Church Website",
+    technologies: [
+      "Next.js",
+      "Firebase",
+      "Tailwind CSS",
+      "Vercel",
+      "TypeScript",
+    ],
+    metrics: [
+      { label: "Jemaat Terdaftar", value: "50+" },
+      { label: "Kepuasan Pengguna", value: "97%" },
+    ],
+  },
 {
-  title: "E-Canteen Bina Persada School",
+  title: "Website Resmi NGO 7Lung",
   description:
-    "A modern web app for digitizing school canteen systems. Features include student balance top-ups, lunch vouchers, transaction reports, and service automation for operational efficiency and better user experience.",
-  image: "/ekantin.png",
-  category: "Web Apps",
-  technologies: [
-    "Laravel 11",
-    "Inertia.js",
-    "Vue 3",
-    "Tailwind CSS",
-    "MySQL",
-    "REST API",
-  ],
-  metrics: [
-    { label: "Transaction Speed", value: "+40%" },
-    { label: "Operational Efficiency", value: "+30%" },
-  ],
-},
-{
-  title: "Jalin Sehat",
-  description:
-    "A SaaS-based hospital registration app that allows patients to register online, view doctor schedules, and manage health data securely and quickly.",
-  image: "/jalinsehat.jpg",
-  category: "Mobile & Web App",
-  technologies: [
-    "React Native",
-    "Next.js",
-    "Supabase",
-    "TypeScript",
-    "Tailwind CSS",
-    "Vercel",
-  ],
-  metrics: [
-    { label: "Online Registrations", value: "+50%" },
-    { label: "User Satisfaction", value: "98%" },
-  ],
-},
-{
-  title: "Learning Hands",
-  description:
-    "An interactive preschool website combining game-based learning with educational activities, interactive stories, and resources for parents.",
-  image: "/learninghands.png",
-  category: "Education Website",
-  technologies: [
-    "Next.js",
-    "TypeScript",
-    "PostgreSQL",
-    "Prisma ORM",
-    "Tailwind CSS",
-    "Docker",
-  ],
-  metrics: [
-    { label: "Children Engagement", value: "+60%" },
-    { label: "System Availability", value: "99%" },
-  ],
-},
-{
-  title: "Fazar",
-  description:
-    "An e-commerce website with product catalog, order management, and payment integration. Focused on performance, security, and an optimized user experience.",
-  image: "/fazar.png",
-  category: "E-Commerce Website",
-  technologies: [
-    "Next.js",
-    "Stripe API",
-    "TypeScript",
-    "MongoDB",
-    "Tailwind CSS",
-    "Cloudflare",
-  ],
-  metrics: [
-    { label: "Load Speed", value: "<2s" },
-    { label: "Successful Transactions", value: "99%" },
-  ],
-},
-{
-  title: "Chatting Apps | ChatMe!",
-  description:
-    "A real-time web-based chat app supporting text, image, video, and voice messages. Uses JWT authentication and WebSocket for instant communication.",
-  image: "/chatz.jpg",
-  category: "Communication App",
-  technologies: [
-    "Next.js",
-    "Node.js",
-    "Socket.IO",
-    "MongoDB",
-    "JWT Auth",
-    "Tailwind CSS",
-  ],
-  metrics: [
-    { label: "Real-time Messages", value: "Instant <1s" },
-    { label: "Server Uptime", value: "99.8%" },
-  ],
-},
-{
-  title: "Wedding Organizer Website",
-  description:
-    "An online platform helping couples plan weddings. Features vendor catalogs, portfolios, and digital budgeting tools.",
-  image: "/wedding.jpg",
-  category: "Service Website",
-  technologies: [
-    "Next.js",
-    "Supabase",
-    "Tailwind CSS",
-    "Prisma ORM",
-    "TypeScript",
-    "Vercel",
-  ],
-  metrics: [
-    { label: "Registered Vendors", value: "50+" },
-    { label: "User Satisfaction", value: "97%" },
-  ],
-},
-{
-  title: "Bina Persada International School Website",
-  description:
-    "Official school website providing academic information, activities, and online registration.",
-  image: "/bp.jpg",
-  category: "School Website",
-  technologies: [
-    "Next.js",
-    "Sanity CMS",
-    "Tailwind CSS",
-    "Vercel",
-    "TypeScript",
-  ],
-  metrics: [
-    { label: "Registered Students", value: "100+" },
-    { label: "User Satisfaction", value: "97%" },
-  ],
-},
-{
-  title: "LBH Inayah Filia Website",
-  description:
-    "An online legal consultation platform featuring service forms, law articles, and client management.",
-  image: "/if.png",
-  category: "Legal First Aid Website",
-  technologies: [
-    "Next.js",
-    "Supabase",
-    "Tailwind CSS",
-    "Prisma ORM",
-    "TypeScript",
-    "Vercel",
-  ],
-  metrics: [
-    { label: "Clients Assisted", value: "50+" },
-    { label: "User Satisfaction", value: "97%" },
-  ],
-},
-{
-  title: "GSK Bandung Church Official Website",
-  description:
-    "Official website for GSK Bandung Church providing worship schedules and community services.",
-  image: "/gsk.png",
-  category: "Church Website",
-  technologies: [
-    "Next.js",
-    "Firebase",
-    "Tailwind CSS",
-    "Vercel",
-    "TypeScript",
-  ],
-  metrics: [
-    { label: "Registered Members", value: "50+" },
-    { label: "User Satisfaction", value: "97%" },
-  ],
-},
-{
-  title: "7Lung NGO Official Website",
-  description:
-    "Official website for 7Lung NGO providing information about missions, programs, and activities. Includes annual reports, photo galleries, and donation forms to support humanitarian goals.",
+    "Website resmi NGO 7Lung yang menyediakan informasi tentang misi, program, dan kegiatan organisasi. Website ini juga menampilkan laporan tahunan, galeri foto, dan formulir donasi untuk mendukung kegiatan sosial. Dirancang untuk meningkatkan kesadaran dan partisipasi masyarakat dalam mendukung tujuan kemanusiaan NGO.",
   image: "/7l.png",
   category: "NGO Foundation Website",
   technologies: [
@@ -219,14 +219,14 @@ const Portfolio = () => {
     "Vercel Hosting"
   ],
   metrics: [
-    { label: "Registered Volunteers", value: "50+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Volunteer Terdata", value: "50+" },
+    { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
 {
-  title: "Natural Disaster Monitoring and Reporting Website",
+  title: "Website Pemantauan dan Pelaporan Bencana Alam",
   description:
-    "A web app for real-time natural disaster monitoring and reporting. Features interactive maps, notifications, and live status reports to assist disaster response coordination.",
+    "Webapps untuk memantau dan melaporkan bencana alam secara real-time. Fitur meliputi peta interaktif, sistem notifikasi, dan laporan kondisi terkini untuk membantu koordinasi respons bencana. Dirancang untuk meningkatkan kesiapsiagaan dan respons cepat terhadap bencana alam.",
   image: "/bp.png",
   category: "Disaster Management Website",
   technologies: [
@@ -238,14 +238,14 @@ const Portfolio = () => {
     "Socket.io"
   ],
   metrics: [
-    { label: "Disasters Handled", value: "50+" },
-    { label: "Response Success", value: "97%" }
+    { label: "Bencana Tertangani", value: "50+" },
+    { label: "Kesuksesan", value: "97%" }
   ]
 },
 {
-  title: "Casavia Estate Website",
+  title: "Website Casavia Estate",
   description:
-    "Official Casavia Estate website providing property listings, facilities, and contact forms to assist potential buyers.",
+    "Website resmi Casavia Estate yang menyediakan informasi tentang properti, layanan, dan fasilitas perumahan. Website ini menampilkan katalog properti, galeri foto, dan formulir kontak untuk memudahkan calon pembeli dalam mendapatkan informasi. Dirancang untuk memberikan pengalaman pengguna yang informatif dan menarik bagi calon pembeli properti.",
   image: "/ce.png",
   category: "Real Estate Website",
   technologies: [
@@ -257,14 +257,14 @@ const Portfolio = () => {
     "Vercel"
   ],
   metrics: [
-    { label: "Property Sales", value: "500+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Penjualan", value: "500+" },
+    { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
 {
-  title: "Inayah Filia Crowdfunding Platform",
+  title: "Website Crowdfunding Inayah Filia",
   description:
-    "A crowdfunding platform supporting social and humanitarian projects initiated by LBH Inayah Filia. Allows users to create campaigns, share stories, and track donation progress transparently.",
+    "Platform crowdfunding untuk mendukung proyek sosial dan kemanusiaan yang diinisiasi oleh LBH Inayah Filia. Website ini memungkinkan pengguna untuk membuat kampanye penggalangan dana, berbagi cerita, dan melacak kemajuan donasi secara transparan. Dirancang untuk memudahkan masyarakat dalam berkontribusi terhadap perubahan positif melalui donasi online.",
   image: "/donasi.png",
   category: "Crowdfunding Website",
   technologies: [
@@ -276,14 +276,14 @@ const Portfolio = () => {
     "Vercel Hosting"
   ],
   metrics: [
-    { label: "Active Volunteers", value: "50+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Volunteer Terdata", value: "50+" },
+    { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
 {
-  title: "Online Learning Platform",
+  title: "Platform Pelajaran Daring",
   description:
-    "An online education website providing interactive courses, video tutorials, and quizzes. Includes course management, progress tracking, and completion certificates.",
+    "Website pembelajaran online yang menyediakan kursus interaktif, video tutorial, dan kuis untuk berbagai topik. Fitur meliputi manajemen kursus, pelacakan kemajuan belajar, dan sertifikat penyelesaian. Dirancang untuk memberikan pengalaman belajar yang fleksibel dan efektif bagi pengguna dari berbagai usia.",
   image: "/edu.png",
   category: "Education Website",
   technologies: [
@@ -295,14 +295,14 @@ const Portfolio = () => {
     "Tailwind CSS"
   ],
   metrics: [
-    { label: "Students", value: "100+" },
-    { label: "Courses Available", value: "97%" }
+    { label: "Siswa", value: "100+" },
+    { label: "Materi", value: "97%" }
   ]
 },
 {
-  title: "GSK Inventory Management App",
+  title: "Apps Inventaris Barang GSK",
   description:
-    "A web-based inventory management system for GSK Church to manage assets and equipment efficiently.",
+    "Aplikasi inventaris berbasis web untuk Gereja GSK yang memudahkan pengelolaan aset dan perlengkapan gereja. Fitur meliputi pencatatan barang, pelacakan lokasi, dan laporan inventaris. Dirancang untuk meningkatkan efisiensi pengelolaan inventaris dan memastikan ketersediaan perlengkapan gereja yang optimal.",
   image: "/inv_gsk.png",
   category: "Inventory Management App",
   technologies: [
@@ -314,14 +314,14 @@ const Portfolio = () => {
     "Vercel"
   ],
   metrics: [
-    { label: "Items Tracked", value: "100+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Barang Terdata", value: "100+" },
+    { label: "Kepuasan User", value: "97%" }
   ]
 },
 {
-  title: "Free Online Legal Consultation Website",
+  title: "Website Konsultasi Hukum Online (gratis)",
   description:
-    "An online legal consultation platform offering free services, legal articles, and educational resources to help the public understand their rights.",
+    "Platform online untuk konsultasi hukum gratis yang diinisiasi oleh LBH Inayah Filia. Website ini menyediakan formulir kontak, artikel hukum, dan sumber daya edukatif untuk membantu masyarakat memahami hak-hak mereka. Dirancang untuk memberikan akses yang mudah dan transparan terhadap informasi hukum bagi masyarakat luas.",
   image: "/kh.png",
   category: "Legal Consultation Website",
   technologies: [
@@ -333,14 +333,14 @@ const Portfolio = () => {
     "PostgreSQL"
   ],
   metrics: [
-    { label: "Cases Handled", value: "50+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Kasus Terdata", value: "50+" },
+    { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
 {
-  title: "LBH Anak Indonesia Website",
+  title: "LBH Anak Indonesia",
   description:
-    "Official website for LBH Anak Indonesia providing legal aid services, advocacy programs, and educational resources for child protection.",
+    "Website resmi LBH Anak Indonesia yang menyediakan informasi tentang layanan hukum, program advokasi, dan sumber daya edukatif untuk perlindungan hak anak. Website ini juga menampilkan laporan tahunan, galeri foto, dan formulir kontak untuk memudahkan klien dalam mendapatkan bantuan hukum. Dirancang untuk meningkatkan kesadaran dan partisipasi masyarakat dalam mendukung hak anak.",
   image: "/lbhai.png",
   category: "Legal Aid Website",
   technologies: [
@@ -352,14 +352,14 @@ const Portfolio = () => {
     "PostgreSQL"
   ],
   metrics: [
-    { label: "Child Cases Resolved", value: "50+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Kasus Anak Indonesia Terselesaikan", value: "50+" },
+    { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
 {
-  title: "M-Plus Event Organizer Company Profile Website",
+  title: "Website Company Profile EO M-Plus",
   description:
-    "Official website for M-Plus Event Organizer providing service details, event portfolios, and client testimonials.",
+    "Website resmi M-Plus Event Organizer yang menyediakan informasi tentang layanan event organizer, portofolio acara, dan testimoni klien. Dirancang untuk memberikan pengalaman pengguna yang informatif dan menarik bagi calon klien yang ingin menggunakan jasa event organizer.",
   image: "/mplus.png",
   category: "Company Profile Website",
   technologies: [
@@ -371,14 +371,14 @@ const Portfolio = () => {
     "Vercel"
   ],
   metrics: [
-    { label: "Successful Events", value: "50+" },
-    { label: "Client Satisfaction", value: "97%" }
+    { label: "Event Sukses", value: "50+" },
+    { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
 {
-  title: "MY-Law Official Website",
+  title: "Website Resmi MY-Law",
   description:
-    "Official website for MY-Law featuring legal services, lawyer profiles, legal articles, and contact forms for client assistance.",
+    "Website resmi MY-Law yang menyediakan informasi tentang layanan hukum, profil pengacara, artikel hukum, dan formulir kontak untuk memudahkan klien dalam mendapatkan bantuan hukum. Dirancang untuk memberikan akses yang mudah dan transparan terhadap layanan hukum bagi masyarakat.",
   image: "/mylaw.png",
   category: "Law Firm Website",
   technologies: [
@@ -390,14 +390,14 @@ const Portfolio = () => {
     "Vercel Hosting"
   ],
   metrics: [
-    { label: "Cases Solved", value: "50+" },
-    { label: "Client Satisfaction", value: "97%" }
+    { label: "Kasus Teratasi", value: "50+" },
+    { label: "Kepuasan Pengguna", value: "97%" }
   ]
 },
 {
-  title: "SMP Lab Malang Website",
+  title: "Website SMP Lab Malang",
   description:
-    "Official website for SMP Lab Malang providing academic programs, extracurricular activities, facilities, and student admissions.",
+    "Website resmi SMP Lab Malang yang menyediakan informasi tentang program akademik, kegiatan ekstrakurikuler, fasilitas, dan pendaftaran siswa baru. Dirancang untuk memberikan pengalaman pengguna yang informatif dan menarik bagi calon siswa, orang tua, dan komunitas sekolah.",
   image: "/smplab.png",
   category: "School Website",
   technologies: [
@@ -409,14 +409,14 @@ const Portfolio = () => {
     "Cloud Hosting"
   ],
   metrics: [
-    { label: "Registered Students", value: "500+" },
-    { label: "Parent Satisfaction", value: "97%" }
+    { label: "Murid Terdata", value: "500+" },
+    { label: "Kepuasan Orang Tua", value: "97%" }
   ]
 },
 {
-  title: "Online Music Streaming Website",
+  title: "Website Streaming Musik Online",
   description:
-    "A web app for online music streaming featuring song search, playlists, and personalized recommendations.",
+    "Applikasi web untuk streaming musik online dengan fitur pencarian lagu, playlist, dan rekomendasi berdasarkan preferensi pengguna. Dirancang untuk memberikan pengalaman mendengarkan musik yang personal dan interaktif.",
   image: "/music.png",
   category: "Music Streaming Website",
   technologies: [
@@ -428,14 +428,14 @@ const Portfolio = () => {
     "Cloud Hosting"
   ],
   metrics: [
-    { label: "Available Tracks", value: "500+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Musik Tersedia", value: "500+" },
+    { label: "Kepuasan User", value: "97%" }
   ]
 },
 {
-  title: "Kury’n Travel & Car Rental Website",
+  title: "Kury'n Travel dan Sewa Mobil",
   description:
-    "Official website for Kury’n Travel, offering travel and car rental services with route information and online booking.",
+    "Website resmi Kury'n Travel yang menyediakan informasi tentang layanan travel dan sewa mobil, rute perjalanan, dan formulir pemesanan online. Dirancang untuk memberikan pengalaman pengguna yang mudah dan efisien dalam merencanakan perjalanan.",
   image: "/kuryn.png",
   category: "Travel Agency Website",
   technologies: [
@@ -446,14 +446,14 @@ const Portfolio = () => {
     "Cloud Hosting"
   ],
   metrics: [
-    { label: "Available Cars", value: "50+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Mobil Tersedia", value: "50+" },
+    { label: "Kepuasan User", value: "97%" }
   ]
 },
 {
-  title: "7Lung Volunteer Registration Website",
+  title: "Website Registrasi Relawan 7Lung",
   description:
-    "Volunteer registration platform for NGO 7Lung that simplifies registration and data management for volunteers.",
+    "Website registrasi relawan untuk NGO 7Lung yang memudahkan",
   image: "/reg.png",
   category: "Volunteer Registration Website",
   technologies: [
@@ -465,14 +465,14 @@ const Portfolio = () => {
     "Cloud Hosting"
   ],
   metrics: [
-    { label: "Registered Members", value: "100+" },
-    { label: "Official Volunteers", value: "97%" }
+    { label: "Anggota Terdata", value: "100+" },
+    { label: "Anggota Resmi", value: "97%" }
   ]
 },
 {
-  title: "Web-based Disaster Reporting Platform",
+  title: "Pelaporan Bencana Alam Berbasis Web",
   description:
-    "A real-time disaster reporting web app featuring an interactive map, notifications, and live condition reports.",
+    "Aplikasi web untuk pelaporan bencana alam secara real-time dengan fitur peta interaktif, sistem notifikasi, dan laporan kondisi terkini. Dirancang untuk meningkatkan kesiapsiagaan dan respons cepat terhadap bencana alam.",
   image: "/report.png",
   category: "Disaster Reporting Website",
   technologies: [
@@ -484,14 +484,14 @@ const Portfolio = () => {
     "Cloud Hosting"
   ],
   metrics: [
-    { label: "Reports Logged", value: "100+" },
-    { label: "Response Accuracy", value: "97%" }
+    { label: "Teratas", value: "100+" },
+    { label: "Keselamatan", value: "97%" }
   ]
 },
 {
-  title: "Restaurant POS Web App",
+  title: "Webapps POS Untuk Restoran",
   description:
-    "A web-based POS (Point of Sale) system for restaurants to manage orders, inventory, and sales reports efficiently.",
+    "Aplikasi web POS (Point of Sale) untuk restoran yang memudahkan pengelolaan pesanan, inventaris, dan laporan penjualan. Dirancang untuk meningkatkan efisiensi operasional dan pengalaman pelanggan di restoran.",
   image: "/resto.png",
   category: "Restaurant POS Web App",
   technologies: [
@@ -503,11 +503,10 @@ const Portfolio = () => {
     "Cloud Hosting"
   ],
   metrics: [
-    { label: "Restaurants Helped", value: "500+" },
-    { label: "User Satisfaction", value: "97%" }
+    { label: "Resto - Kafe Terbantu", value: "500+" },
+    { label: "Kepuasan User", value: "97%" }
   ]
-}
-
+},
   ];
 
   return (
@@ -525,24 +524,23 @@ const Portfolio = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Our Portfolio</span>
+            <span className="text-sm font-medium">Portofolio Kami</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Showcasing
+            Menampilkan
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">
-              Our Works
+              Karya Kami
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-            Discover how we help businesses transform digitally through
-            innovative, scalable, and results-driven technology solutions.
+            Temukan bagaimana kami membantu bisnis bertransformasi secara digital melalui solusi teknologi yang inovatif, scalable, dan berfokus pada hasil.
           </p>
         </div>
 
-        {/* Category filter */}
+        {/* Filter kategori */}
         <div className="mt-12 flex flex-wrap justify-center gap-4">
           {categories.map((category) => (
             <button
@@ -559,19 +557,19 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* Project list */}
+        {/* Daftar proyek */}
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-3">
           {projects
             .filter(
               (project) =>
-                activeFilter === "All" || project.category === activeFilter
+                activeFilter === "Semua" || project.category === activeFilter
             )
             .map((project) => (
               <div
                 key={project.title}
                 className="group relative bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500"
               >
-                {/* Project image */}
+                {/* Gambar proyek */}
                 <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
                   <LazyImage
                     src={project.image}
@@ -596,7 +594,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                {/* Project info */}
+                {/* Info proyek */}
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
                     <span className="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400">
@@ -611,7 +609,7 @@ const Portfolio = () => {
                     {project.description}
                   </p>
 
-                  {/* Technologies */}
+                  {/* Teknologi */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, idx) => (
                       <span
@@ -625,7 +623,7 @@ const Portfolio = () => {
                   </div>
 
                   <button className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium group">
-                    <span>View Details</span>
+                    <span>Lihat Detail</span>
                     <ExternalLink className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </button>
                 </div>

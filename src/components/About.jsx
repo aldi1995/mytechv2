@@ -4,38 +4,38 @@ import { Rocket, Eye, Users, ArrowUpRight } from "lucide-react";
 const About = () => {
   const features = [
     {
-      title: "Our Mission",
+      title: "Misi Kami",
       description:
-        "Empowering businesses with innovative digital solutions that drive growth and success.",
+        "Memberdayakan bisnis dengan solusi digital inovatif yang mendorong pertumbuhan dan kesuksesan.",
       icon: Rocket,
       gradient: "from-blue-700 to-indigo-800",
     },
     {
-      title: "Our Vision",
+      title: "Visi Kami",
       description:
-        "To be a catalyst for digital transformation by setting new standards of innovation across the globe.",
+        "Menjadi penggerak transformasi digital dengan menetapkan standar baru dalam inovasi di seluruh dunia.",
       icon: Eye,
       gradient: "from-indigo-800 to-blue-900",
     },
     {
-      title: "Our Values",
+      title: "Nilai Kami",
       description:
-        "Built upon innovation, integrity, and excellence. These core values guide every decision we make.",
+        "Dibangun di atas inovasi, integritas, dan keunggulan. Nilai-nilai inti ini menjadi dasar dalam setiap keputusan yang kami ambil.",
       icon: Users,
       gradient: "from-blue-800 to-sky-700",
     },
   ];
 
   const stats = [
-    { number: "5+", label: "Years of Experience" },
-    { number: "20+", label: "Projects Completed" },
-    { number: "98%", label: "Client Satisfaction" },
-    { number: "5+", label: "Expert Team Members" },
+    { number: "5+", label: "Tahun Pengalaman" },
+    { number: "20+", label: "Proyek Selesai" },
+    { number: "98%", label: "Kepuasan Klien" },
+    { number: "5+", label: "Anggota Tim Ahli" },
   ];
 
   return (
     <section className="relative py-32 bg-[#f9fafc] dark:bg-gray-900 transition-colors duration-500">
-      {/* Soft gradient background */}
+      {/* Latar belakang gradasi lembut */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-full h-full">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] aspect-[1/0.7] bg-gradient-to-b from-white via-blue-50/30 to-transparent dark:from-gray-900 dark:via-gray-800/40 dark:to-transparent rounded-[50%] blur-3xl" />
@@ -43,36 +43,34 @@ const About = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header section */}
+        {/* Bagian Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900 text-white shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">About Our Company</span>
+            <span className="text-sm font-medium">Tentang Perusahaan Kami</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Pioneers in
+            Pelopor dalam
             <span className="block mt-2 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
-              Technological Excellence
+              Keunggulan Teknologi
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-gray-300 leading-relaxed">
-            Established in 2023, MyTech Indonesia stands as a trusted digital
-            partner for businesses and organizations striving to thrive in the
-            technological era. <br />
+            Berdiri sejak tahun 2023, MyTech Indonesia hadir sebagai mitra digital terpercaya
+            bagi bisnis dan organisasi yang ingin berkembang di era teknologi. <br />
             <br />
-            We develop digital solutions ranging from websites and business
-            applications to information systems — all designed to enhance
-            efficiency, visibility, and productivity. <br />
+            Kami mengembangkan berbagai solusi digital mulai dari website, aplikasi bisnis,
+            hingga sistem informasi — semua dirancang untuk meningkatkan efisiensi,
+            visibilitas, dan produktivitas. <br />
             <br />
-            At MyTech Indonesia, we believe that technology is not merely a
-            tool, but a bridge toward growth — and we are here to help you cross
-            it with confidence.
+            Di MyTech Indonesia, kami percaya bahwa teknologi bukan hanya alat,
+            tetapi jembatan menuju pertumbuhan — dan kami hadir untuk membantu Anda melintasinya dengan percaya diri.
           </p>
         </div>
 
-        {/* Feature cards */}
+        {/* Kartu Fitur */}
         <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => (
             <div
@@ -100,7 +98,7 @@ const About = () => {
           ))}
         </div>
 
-        {/* Statistics */}
+        {/* Statistik */}
         <div className="mt-24 rounded-3xl bg-blue-900 dark:bg-indigo-950 p-12 sm:p-16 relative overflow-hidden transition-colors duration-500">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-700/20 to-indigo-900/20" />
           <div className="relative grid grid-cols-2 gap-12 md:grid-cols-4">

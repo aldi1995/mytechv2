@@ -6,9 +6,9 @@ const mobileProjects = [
   {
     title: "GoProperty",
     description:
-      "A real estate app featuring interactive maps, advanced filters, and real-time notifications for both buyers and property agents.",
+      "Aplikasi properti dengan peta interaktif, filter canggih, dan notifikasi real-time untuk pembeli dan agen properti.",
     image: "/goproperty.png",
-    category: "Mobile App (Android & iOS)",
+    category: "Aplikasi Mobile (Android & iOS)",
     technologies: [
       "React Native",
       "Firebase",
@@ -17,17 +17,17 @@ const mobileProjects = [
       "Tailwind CSS",
     ],
     metrics: [
-      { label: "Active Listings", value: "10K+" },
-      { label: "User Rating", value: "4.9⭐" },
+      { label: "Daftar Aktif", value: "10K+" },
+      { label: "Rating Pengguna", value: "4.9⭐" },
     ],
     link: "#",
   },
   {
     title: "MyClinic App",
     description:
-      "A clinic reservation and patient management system that supports doctor scheduling, health records, and real-time queue notifications.",
+      "Sistem reservasi klinik dan manajemen pasien yang mendukung jadwal dokter, catatan kesehatan, dan notifikasi antrian real-time.",
     image: "/klinik.png",
-    category: "Mobile App (Android & iOS)",
+    category: "Aplikasi Mobile (Android & iOS)",
     technologies: [
       "React Native",
       "Supabase",
@@ -36,17 +36,17 @@ const mobileProjects = [
       "TypeScript",
     ],
     metrics: [
-      { label: "Registered Patients", value: "8K+" },
-      { label: "Connected Clinics", value: "150+" },
+      { label: "Pasien Terdaftar", value: "8K+" },
+      { label: "Klinik Terhubung", value: "150+" },
     ],
     link: "#",
   },
   {
     title: "EduTrack Mobile",
     description:
-      "An education platform that helps teachers and students manage attendance, view grades, and track learning progress — all in one app.",
+      "Platform pendidikan yang membantu guru dan siswa mengelola absensi, melihat nilai, dan memantau perkembangan belajar dalam satu aplikasi.",
     image: "/edu3.png",
-    category: "Mobile App (Android)",
+    category: "Aplikasi Mobile (Android)",
     technologies: [
       "React Native",
       "Laravel API",
@@ -55,8 +55,8 @@ const mobileProjects = [
       "Tailwind CSS",
     ],
     metrics: [
-      { label: "Partner Schools", value: "50+" },
-      { label: "Daily Activities", value: "3K+" },
+      { label: "Sekolah Mitra", value: "50+" },
+      { label: "Aktivitas Harian", value: "3K+" },
     ],
     link: "#",
   },
@@ -78,20 +78,20 @@ const PortfolioMobile = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-lg hover:shadow-xl transition-shadow duration-300 group mb-8">
-            <span className="text-sm font-medium">Mobile Portfolio</span>
+            <span className="text-sm font-medium">Portofolio Mobile</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Our
+            Aplikasi
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">
-              Mobile Apps
+              Mobile Kami
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-            Innovative mobile solutions designed to enhance efficiency,
-            productivity, and accessibility across multiple industries.
+            Solusi mobile inovatif yang dirancang untuk meningkatkan efisiensi,
+            produktivitas, dan aksesibilitas di berbagai industri.
           </p>
         </div>
 
@@ -148,7 +148,7 @@ const PortfolioMobile = () => {
                 </div>
 
                 <button className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium group">
-                  <span>View Details</span>
+                  <span>Lihat Detail</span>
                   <ExternalLink className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </button>
               </div>

@@ -16,58 +16,58 @@ const ServicesConsulting = () => {
 
   const services = [
     {
-      title: "Business Needs Analysis",
+      title: "Analisis Kebutuhan Bisnis",
       description:
-        "Identify your IT requirements accurately to achieve efficiency and scalability for your business.",
+        "Identifikasi kebutuhan IT Anda secara akurat untuk mencapai efisiensi dan skalabilitas bisnis.",
       icon: Laptop,
       gradient: "from-blue-600 to-sky-500",
       features: [
-        "System & infrastructure audit",
-        "Software requirements mapping",
-        "Comprehensive analysis documentation",
+        "Audit sistem & infrastruktur",
+        "Pemetaan kebutuhan perangkat lunak",
+        "Dokumentasi analisis menyeluruh",
       ],
     },
     {
-      title: "Digital Transformation Strategy",
+      title: "Strategi Transformasi Digital",
       description:
-        "Develop your company’s digitalization roadmap to thrive in the Industry 4.0 era.",
+        "Bangun peta jalan digitalisasi perusahaan Anda untuk berkembang di era Industri 4.0.",
       icon: Network,
       gradient: "from-sky-600 to-blue-600",
       features: [
-        "Corporate digitalization roadmap",
-        "System integration & process automation",
-        "IT implementation support",
+        "Peta jalan digitalisasi perusahaan",
+        "Integrasi sistem & otomatisasi proses",
+        "Dukungan implementasi IT",
       ],
     },
     {
-      title: "Cloud & Infrastructure",
+      title: "Cloud & Infrastruktur",
       description:
-        "Enhance business performance with secure and efficient cloud-based solutions.",
+        "Tingkatkan performa bisnis dengan solusi berbasis cloud yang aman dan efisien.",
       icon: Cloud,
       gradient: "from-blue-500 to-sky-500",
       features: [
-        "Migration to AWS / GCP / Azure",
-        "Server management & backup",
-        "Infrastructure cost optimization",
+        "Migrasi ke AWS / GCP / Azure",
+        "Manajemen server & backup",
+        "Optimasi biaya infrastruktur",
       ],
     },
     {
-      title: "Security & Compliance",
+      title: "Keamanan & Kepatuhan",
       description:
-        "Ensure your business systems are protected and meet global security standards.",
+        "Pastikan sistem bisnis Anda terlindungi dan memenuhi standar keamanan global.",
       icon: ShieldCheck,
       gradient: "from-sky-600 to-blue-600",
       features: [
-        "Security assessment & penetration testing",
-        "ISO 27001 & GDPR compliance",
-        "Monitoring & alert systems",
+        "Penilaian keamanan & uji penetrasi",
+        "Kepatuhan ISO 27001 & GDPR",
+        "Sistem pemantauan & notifikasi",
       ],
     },
   ];
 
   return (
     <section className="relative py-32 bg-gradient-to-b from-white via-slate-50 to-blue-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 transition-colors duration-500 overflow-hidden">
-      {/* Soft background glow */}
+      {/* Latar belakang lembut */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[120%] h-[400px] bg-blue-100/40 dark:bg-blue-900/20 blur-[120px] rounded-full"></div>
       </div>
@@ -77,25 +77,25 @@ const ServicesConsulting = () => {
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white dark:bg-blue-700 shadow-lg mb-8">
             <span className="text-sm font-medium tracking-wide">
-              IT Consulting Services
+              Layanan Konsultasi IT
             </span>
             <ArrowUpRight className="w-4 h-4" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
-            IT Solutions for{" "}
+            Solusi IT untuk{" "}
             <span className="bg-gradient-to-r from-blue-700 to-sky-600 bg-clip-text text-transparent">
-              Your Digital Business Transformation
+              Transformasi Digital Bisnis Anda
             </span>
           </h2>
 
           <p className="mt-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            We help you design, optimize, and secure IT systems to ensure your
-            business runs efficiently and is ready for the future.
+            Kami membantu Anda merancang, mengoptimalkan, dan mengamankan sistem IT
+            agar bisnis berjalan efisien dan siap menghadapi masa depan.
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Daftar Layanan */}
         <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (
             <div
@@ -128,22 +128,22 @@ const ServicesConsulting = () => {
               </ul>
 
               <button className="group inline-flex items-center text-sm font-medium text-blue-700 dark:text-blue-400 hover:text-blue-900 dark:hover:text-blue-300 transition-all">
-                Learn More
+                Pelajari Lebih Lanjut
                 <ArrowUpRight className="ml-1 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </button>
             </div>
           ))}
         </div>
 
-        {/* CTA Section */}
+        {/* Bagian CTA */}
         <div className="mt-24 text-center">
           <div className="relative bg-gradient-to-r from-slate-900 to-blue-900 dark:from-blue-800 dark:to-slate-900 p-10 rounded-3xl overflow-hidden transition-all duration-500">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.1),transparent)] dark:bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.05),transparent)]" />
             <h3 className="text-2xl font-bold text-white relative z-10">
-              Need Professional IT Guidance?
+              Butuh Arahan Profesional di Bidang IT?
             </h3>
             <p className="text-slate-300 mt-3 relative z-10">
-              Consult your IT needs with our team of experts.
+              Konsultasikan kebutuhan IT Anda bersama tim ahli kami.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 relative z-10">
@@ -151,13 +151,13 @@ const ServicesConsulting = () => {
                 onClick={() => navigate("/contact")}
                 className="px-8 py-4 rounded-full bg-white text-slate-900 font-medium hover:bg-slate-200 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200 transition-all"
               >
-                Contact Us
+                Hubungi Kami
               </button>
               <button
                 onClick={() => setShowModal(true)}
                 className="px-8 py-4 rounded-full border-2 border-white text-white font-medium hover:bg-white/10 transition-all"
               >
-                Schedule a Consultation
+                Jadwalkan Konsultasi
               </button>
             </div>
           </div>
@@ -175,32 +175,31 @@ const ServicesConsulting = () => {
               <X size={20} />
             </button>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              Schedule a Consultation
+              Jadwalkan Konsultasi
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6">
-              Tell us about your IT needs — our team is ready to help from
-              analysis to implementation.
+              Ceritakan kebutuhan IT Anda — tim kami siap membantu dari analisis hingga implementasi.
             </p>
 
             <form className="space-y-4">
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="Nama Lengkap"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="email"
-                placeholder="Email Address"
+                placeholder="Alamat Email"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="tel"
-                placeholder="Phone Number"
+                placeholder="Nomor Telepon"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <textarea
                 rows="4"
-                placeholder="Describe your needs..."
+                placeholder="Jelaskan kebutuhan Anda..."
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               ></textarea>
 
@@ -208,7 +207,7 @@ const ServicesConsulting = () => {
                 type="submit"
                 className="w-full py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-sky-600 transition-all"
               >
-                Submit Consultation Request
+                Kirim Permintaan Konsultasi
               </button>
             </form>
           </div>

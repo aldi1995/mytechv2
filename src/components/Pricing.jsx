@@ -6,11 +6,12 @@ const Pricing = () => {
   const [openForm, setOpenForm] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState("");
 
-  const formatPrice = (monthly, yearly) => (isYearly ? yearly : monthly);
+  const formatPrice = (monthly, yearly) =>
+    isYearly ? yearly : monthly;
 
   const handleContact = (plan) => {
-    if (plan.monthly === "Contact Us") {
-      const message = `Hello MyTech Indonesia! I'm interested in the ${plan.name} package. Please provide more information.`;
+    if (plan.monthly === "Hubungi Kami") {
+      const message = `Halo MyTech Indonesia! Saya tertarik dengan paket ${plan.name}. Mohon informasi lebih lanjut.`;
       window.open(
         `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`,
         "_blank"
@@ -23,173 +24,173 @@ const Pricing = () => {
 
   const categories = [
     {
-      category: "Enterprise Solutions",
-      tagline: "For internal systems & large-scale business needs",
+      category: "Solusi Enterprise",
+      tagline: "Untuk sistem internal & kebutuhan bisnis berskala besar",
       plans: [
         {
           name: "Basic Enterprise",
-          monthly: "$310",
-          yearly: "$3,100",
+          monthly: "Rp 4.950.000",
+          yearly: "Rp 49.500.000",
           gradient: "from-blue-600 to-sky-500",
           features: [
-            "Internal company dashboard",
-            "Local database integration",
-            "Basic user management",
-            "3 months of technical support",
+            "Dashboard internal perusahaan",
+            "Integrasi database lokal",
+            "Manajemen pengguna dasar",
+            "Support teknis 3 bulan",
           ],
         },
         {
           name: "Advanced Enterprise",
-          monthly: "$750",
-          yearly: "$6,900",
+          monthly: "Rp 12.000.000",
+          yearly: "Rp 120.000.000",
           gradient: "from-sky-600 to-blue-600",
           popular: true,
           features: [
-            "External API integration",
-            "Automated reporting (PDF/Excel)",
-            "Role-based access control",
-            "6 months priority support",
+            "Integrasi API eksternal",
+            "Laporan otomatis (PDF/Excel)",
+            "Kontrol akses berbasis peran",
+            "Support prioritas 6 bulan",
           ],
         },
         {
           name: "Custom Enterprise",
-          monthly: "Contact Us",
-          yearly: "Contact Us",
+          monthly: "Hubungi Kami",
+          yearly: "Hubungi Kami",
           gradient: "from-blue-700 to-cyan-500",
           features: [
-            "ERP/CRM/HRMS integration",
-            "Scalable architecture",
+            "Integrasi ERP/CRM/HRMS",
+            "Arsitektur skalabel",
             "SLA 99.9% uptime",
-            "Annual maintenance & 24/7 support",
+            "Maintenance tahunan & support 24/7",
           ],
         },
       ],
     },
     {
-      category: "Website Development",
-      tagline: "Modern digital solutions for your business and brand",
+      category: "Pengembangan Website",
+      tagline: "Solusi digital modern untuk bisnis dan brand Anda",
       plans: [
         {
-          name: "Basic Website",
-          monthly: "$125",
-          yearly: "$1,250",
+          name: "Website Basic",
+          monthly: "Rp 2.000.000",
+          yearly: "Rp 20.000.000",
           gradient: "from-green-600 to-emerald-500",
           features: [
-            "Professional landing page",
-            "Basic SEO optimization",
-            "Responsive design for all devices",
-            "Free domain for 1 year",
+            "Landing page profesional",
+            "Optimisasi SEO dasar",
+            "Desain responsif untuk semua perangkat",
+            "Domain gratis 1 tahun",
           ],
         },
         {
-          name: "Business Website",
-          monthly: "$215",
-          yearly: "$2,100",
+          name: "Website Bisnis",
+          monthly: "Rp 3.500.000",
+          yearly: "Rp 35.000.000",
           gradient: "from-emerald-600 to-green-600",
           popular: true,
           features: [
             "Multi-page (Home, About, Services, Contact)",
-            "WhatsApp & Maps integration",
-            "Dynamic contact form",
-            "6 months technical support",
+            "Integrasi WhatsApp & Maps",
+            "Formulir kontak dinamis",
+            "Support teknis 6 bulan",
           ],
         },
         {
           name: "E-Commerce Pro",
-          monthly: "$375",
-          yearly: "$3,700",
+          monthly: "Rp 6.000.000",
+          yearly: "Rp 60.000.000",
           gradient: "from-teal-600 to-green-500",
           features: [
-            "Product catalog & shopping cart system",
-            "Payment integration (Midtrans/Xendit)",
-            "Admin dashboard & sales report",
-            "12 months priority support",
+            "Katalog produk & sistem keranjang belanja",
+            "Integrasi pembayaran (Midtrans/Xendit)",
+            "Dashboard admin & laporan penjualan",
+            "Support prioritas 12 bulan",
           ],
         },
       ],
     },
     {
-      category: "Mobile App Development",
-      tagline: "Android & iOS apps to expand your business reach",
+      category: "Pengembangan Aplikasi Mobile",
+      tagline: "Aplikasi Android & iOS untuk memperluas jangkauan bisnis",
       plans: [
         {
           name: "Starter App",
-          monthly: "$500",
-          yearly: "$4,700",
+          monthly: "Rp 8.000.000",
+          yearly: "Rp 75.000.000",
           gradient: "from-purple-600 to-indigo-500",
           features: [
-            "Android app (Play Store ready)",
-            "Basic user authentication",
-            "Simple push notifications",
-            "3 months bugfix support",
+            "Aplikasi Android (siap Play Store)",
+            "Autentikasi pengguna dasar",
+            "Push notification sederhana",
+            "Support bugfix 3 bulan",
           ],
         },
         {
           name: "Pro App",
-          monthly: "$940",
-          yearly: "$8,750",
+          monthly: "Rp 15.000.000",
+          yearly: "Rp 140.000.000",
           gradient: "from-indigo-600 to-violet-600",
           popular: true,
           features: [
             "Android & iOS (Cross-platform Flutter/React Native)",
-            "Cloud database & API integration",
-            "Professional UI/UX design",
-            "6 months priority technical support",
+            "Database cloud & integrasi API",
+            "Desain UI/UX profesional",
+            "Support prioritas 6 bulan",
           ],
         },
         {
           name: "Custom App",
-          monthly: "Contact Us",
-          yearly: "Contact Us",
+          monthly: "Hubungi Kami",
+          yearly: "Hubungi Kami",
           gradient: "from-violet-700 to-purple-500",
           features: [
-            "Complex backend system integration",
-            "Multi-environment deployment",
-            "Annual maintenance",
-            "Advanced features & scaling consultation",
+            "Integrasi backend kompleks",
+            "Deploy multi-environment",
+            "Maintenance tahunan",
+            "Fitur lanjutan & konsultasi scaling",
           ],
         },
       ],
     },
     {
-      category: "IT Consulting & Maintenance",
-      tagline: "Professional system consulting and maintenance services",
+      category: "Konsultasi & Maintenance IT",
+      tagline: "Layanan konsultasi dan maintenance sistem profesional",
       plans: [
         {
           name: "Consult Basic",
-          monthly: "$95",
-          yearly: "$940",
+          monthly: "Rp 1.500.000",
+          yearly: "Rp 15.000.000",
           gradient: "from-orange-600 to-amber-500",
           features: [
-            "System needs analysis",
-            "Digital solution recommendations",
-            "Monthly consulting report",
-            "1 month technical support",
+            "Analisis kebutuhan sistem",
+            "Rekomendasi solusi digital",
+            "Laporan konsultasi bulanan",
+            "Support teknis 1 bulan",
           ],
         },
         {
           name: "Consult Pro",
-          monthly: "$185",
-          yearly: "$1,800",
+          monthly: "Rp 3.000.000",
+          yearly: "Rp 30.000.000",
           gradient: "from-amber-600 to-orange-600",
           popular: true,
           features: [
-            "System development assistance",
-            "Application performance optimization",
-            "Security & data audit",
-            "3 months priority support",
+            "Pendampingan pengembangan sistem",
+            "Optimisasi performa aplikasi",
+            "Audit keamanan & data",
+            "Support prioritas 3 bulan",
           ],
         },
         {
           name: "Dedicated Support",
-          monthly: "Contact Us",
-          yearly: "Contact Us",
+          monthly: "Hubungi Kami",
+          yearly: "Hubungi Kami",
           gradient: "from-orange-700 to-yellow-500",
           features: [
-            "Dedicated IT team for your company",
-            "24/7 system monitoring",
-            "Routine consulting & upgrades",
-            "Professional SLA agreement",
+            "Tim IT khusus untuk perusahaan Anda",
+            "Monitoring sistem 24/7",
+            "Konsultasi & upgrade rutin",
+            "SLA profesional",
           ],
         },
       ],
@@ -201,21 +202,21 @@ const Pricing = () => {
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-blue-600 text-white shadow-lg mb-6">
-          <span className="text-sm font-medium">Pricing Packages</span>
+          <span className="text-sm font-medium">Paket Harga</span>
           <ArrowUpRight className="w-4 h-4" />
         </div>
 
         <h2 className="text-5xl font-bold text-slate-900 dark:text-white">
-          Choose the Package That{" "}
+          Pilih Paket Yang{" "}
           <span className="bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
-            Fits Your Needs
+            Sesuai Kebutuhan Anda
           </span>
         </h2>
         <p className="mt-5 text-lg text-slate-600 dark:text-slate-400">
-          Flexible pricing — transparent and customizable.
+          Harga fleksibel — transparan dan dapat disesuaikan.
         </p>
 
-        {/* Toggle Monthly / Yearly */}
+        {/* Toggle Bulanan / Tahunan */}
         <div className="mt-8 flex justify-center items-center gap-3">
           <span
             className={`text-sm font-medium ${
@@ -224,7 +225,7 @@ const Pricing = () => {
                 : "text-slate-500 dark:text-slate-400"
             }`}
           >
-            Monthly
+            Bulanan
           </span>
           <label className="relative inline-flex items-center cursor-pointer">
             <input
@@ -243,8 +244,7 @@ const Pricing = () => {
                 : "text-slate-500 dark:text-slate-400"
             }`}
           >
-            Yearly{" "}
-            <span className="ml-1 text-xs text-green-500">(Save 20%)</span>
+            Tahunan <span className="ml-1 text-xs text-green-500">(Hemat 20%)</span>
           </span>
         </div>
       </div>
@@ -272,7 +272,7 @@ const Pricing = () => {
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 right-6 flex items-center gap-1 bg-gradient-to-r from-blue-600 to-sky-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow">
-                      <Star className="w-4 h-4" /> Most Popular
+                      <Star className="w-4 h-4" /> Paling Populer
                     </div>
                   )}
                   <h4 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
@@ -281,14 +281,14 @@ const Pricing = () => {
                   <p className="text-4xl font-bold text-slate-900 dark:text-white mb-6">
                     {formatPrice(plan.monthly, plan.yearly)}
                     <span className="text-base font-normal text-slate-500 dark:text-slate-400">
-                      {plan.monthly !== "Contact Us" &&
-                        (isYearly ? "/year" : "/month")}
+                      {plan.monthly !== "Hubungi Kami" &&
+                        (isYearly ? "/tahun" : "/bulan")}
                     </span>
                   </p>
                   <ul className="space-y-3 mb-8 text-slate-600 dark:text-slate-300">
                     {plan.features.map((f, i) => (
                       <li key={i} className="flex items-center">
-                        <CheckCircle2 className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />{" "}
+                        <CheckCircle2 className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
                         {f}
                       </li>
                     ))}
@@ -301,9 +301,9 @@ const Pricing = () => {
                         : "border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-700"
                     }`}
                   >
-                    {plan.monthly === "Contact Us"
-                      ? "Contact via WhatsApp"
-                      : "Consult This Package"}
+                    {plan.monthly === "Hubungi Kami"
+                      ? "Hubungi via WhatsApp"
+                      : "Konsultasi Paket Ini"}
                   </button>
                 </div>
               ))}
@@ -317,16 +317,15 @@ const Pricing = () => {
         <div className="bg-slate-900 dark:bg-slate-800 text-white rounded-3xl p-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-sky-500/10" />
           <div className="relative space-y-6">
-            <h3 className="text-3xl font-bold">Need a Custom Offer?</h3>
+            <h3 className="text-3xl font-bold">Butuh Penawaran Khusus?</h3>
             <p className="text-slate-400">
-              Let us help you design the most efficient solution for your
-              business.
+              Kami bantu rancang solusi paling efisien untuk bisnis Anda.
             </p>
             <button
               onClick={() => setOpenForm(true)}
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white dark:bg-blue-600 text-slate-900 dark:text-white font-semibold hover:shadow-lg transition-all hover:-translate-y-0.5"
             >
-              <Phone className="w-5 h-5" /> Schedule a Free Consultation
+              <Phone className="w-5 h-5" /> Jadwalkan Konsultasi Gratis
             </button>
           </div>
         </div>
@@ -343,35 +342,35 @@ const Pricing = () => {
               ✕
             </button>
             <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">
-              Consultation for {selectedPlan && `(${selectedPlan})`}
+              Konsultasi {selectedPlan && `(${selectedPlan})`}
             </h3>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                alert("Thank you! We will contact you soon.");
+                alert("Terima kasih! Kami akan menghubungi Anda segera.");
                 setOpenForm(false);
               }}
               className="space-y-5"
             >
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="Nama Lengkap"
                 required
                 className="w-full border border-slate-300 dark:border-slate-600 bg-transparent rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white"
               />
               <input
                 type="email"
-                placeholder="Email Address"
+                placeholder="Alamat Email"
                 required
                 className="w-full border border-slate-300 dark:border-slate-600 bg-transparent rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white"
               />
               <input
                 type="tel"
-                placeholder="WhatsApp Number"
+                placeholder="Nomor WhatsApp"
                 className="w-full border border-slate-300 dark:border-slate-600 bg-transparent rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white"
               />
               <textarea
-                placeholder="Your message or business needs..."
+                placeholder="Pesan atau kebutuhan bisnis Anda..."
                 rows="4"
                 className="w-full border border-slate-300 dark:border-slate-600 bg-transparent rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white"
               />
@@ -379,7 +378,7 @@ const Pricing = () => {
                 type="submit"
                 className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 text-white font-semibold hover:opacity-90 transition-all"
               >
-                Send Consultation Request
+                Kirim Permintaan Konsultasi
               </button>
             </form>
           </div>

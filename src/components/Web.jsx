@@ -16,47 +16,47 @@ const Services = () => {
 
   const services = [
     {
-      title: "Company Profile Website",
+      title: "Website Profil Perusahaan",
       description:
-        "Build your company’s professional image with an elegant, fast, and fully responsive website.",
+        "Bangun citra profesional perusahaan Anda dengan website elegan, cepat, dan sepenuhnya responsif.",
       icon: Globe,
       gradient: "from-blue-700 to-blue-800",
       features: [
-        "Responsive & modern design",
-        "Speed and SEO optimization",
-        "Easy content management",
+        "Desain responsif & modern",
+        "Optimasi kecepatan dan SEO",
+        "Kemudahan manajemen konten",
       ],
     },
     {
-      title: "Custom Web System",
+      title: "Sistem Web Kustom",
       description:
-        "Tailor-made web-based solutions built to fit your business — from internal dashboards to reservation systems.",
+        "Solusi berbasis web yang dibuat khusus sesuai kebutuhan bisnis Anda — mulai dari dashboard internal hingga sistem reservasi.",
       icon: Settings,
       gradient: "from-blue-800 to-blue-700",
-      features: ["API & database integration", "High security", "Multi-user access"],
+      features: ["Integrasi API & database", "Keamanan tinggi", "Akses multi-user"],
     },
     {
-      title: "E-Commerce Website",
+      title: "Website E-Commerce",
       description:
-        "Boost your online sales with a fast, secure, and user-friendly digital store.",
+        "Tingkatkan penjualan online Anda dengan toko digital cepat, aman, dan mudah digunakan.",
       icon: ShoppingCart,
       gradient: "from-blue-700 to-blue-600",
       features: [
-        "Shopping cart & online payments",
-        "Product & stock management",
-        "Automated sales reports",
+        "Keranjang belanja & pembayaran online",
+        "Manajemen produk & stok",
+        "Laporan penjualan otomatis",
       ],
     },
     {
-      title: "Maintenance & SEO",
+      title: "Pemeliharaan & SEO",
       description:
-        "Keep your website running at its best with regular maintenance, system updates, and up-to-date SEO strategies.",
+        "Pastikan website Anda selalu optimal dengan pemeliharaan rutin, pembaruan sistem, dan strategi SEO terbaru.",
       icon: BarChart3,
       gradient: "from-blue-600 to-blue-700",
       features: [
-        "System & plugin updates",
-        "Performance & SEO optimization",
-        "Regular backups & security checks",
+        "Pembaruan sistem & plugin",
+        "Optimasi performa & SEO",
+        "Backup & pengecekan keamanan rutin",
       ],
     },
   ];
@@ -76,19 +76,19 @@ const Services = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-blue-700 text-white shadow-lg mb-8 group transition-colors">
-            <span className="text-sm font-medium">Website Services</span>
+            <span className="text-sm font-medium">Layanan Website</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Professional Website Solutions for
+            Solusi Website Profesional untuk
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-blue-800 bg-clip-text text-transparent">
-              Businesses and Organizations
+              Bisnis dan Organisasi
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-            We help you build a strong digital presence — from design to management, all tailored to your needs.
+            Kami membantu Anda membangun kehadiran digital yang kuat — mulai dari desain hingga manajemen, semuanya disesuaikan dengan kebutuhan Anda.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ const Services = () => {
 
                 <div className="pt-6 border-t border-slate-100 dark:border-slate-700">
                   <button className="group inline-flex items-center text-sm font-medium text-slate-900 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
-                    Learn More
+                    Pelajari Lebih Lanjut
                     <ArrowUpRight className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
                 </div>
@@ -141,10 +141,10 @@ const Services = () => {
 
             <div className="relative space-y-6">
               <h3 className="text-2xl font-bold text-white">
-                Ready to Build Your Dream Website?
+                Siap Membangun Website Impian Anda?
               </h3>
               <p className="text-slate-400 dark:text-slate-300">
-                Contact our team for a free consultation.
+                Hubungi tim kami untuk konsultasi gratis.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -152,13 +152,13 @@ const Services = () => {
                   onClick={() => navigate("/contact")}
                   className="px-8 py-4 rounded-full bg-white text-slate-900 font-medium hover:shadow-lg hover:shadow-white/10 transition-all duration-300 transform hover:-translate-y-0.5"
                 >
-                  Contact Us
+                  Hubungi Kami
                 </button>
                 <button
                   onClick={() => setShowModal(true)}
                   className="px-8 py-4 rounded-full border-2 border-slate-700 text-white font-medium hover:bg-slate-800 dark:hover:bg-slate-700 transition-all duration-300"
                 >
-                  Schedule a Consultation
+                  Jadwalkan Konsultasi
                 </button>
               </div>
             </div>
@@ -177,31 +177,31 @@ const Services = () => {
               <X size={20} />
             </button>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              Schedule a Consultation
+              Jadwalkan Konsultasi
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6">
-              Fill out the form below and our team will reach out to you shortly.
+              Isi formulir di bawah ini dan tim kami akan segera menghubungi Anda.
             </p>
 
             <form className="space-y-4">
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="Nama Lengkap"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="email"
-                placeholder="Email Address"
+                placeholder="Alamat Email"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="tel"
-                placeholder="Phone Number"
+                placeholder="Nomor Telepon"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <textarea
                 rows="4"
-                placeholder="Tell us about your website needs..."
+                placeholder="Ceritakan kebutuhan website Anda..."
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
               ></textarea>
 
@@ -209,7 +209,7 @@ const Services = () => {
                 type="submit"
                 className="w-full py-3 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-medium transition-all"
               >
-                Send Consultation Request
+                Kirim Permintaan Konsultasi
               </button>
             </form>
           </div>
