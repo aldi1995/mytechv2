@@ -2,7 +2,7 @@
 
 const blogPosts = [
   {
-  id: 1,
+  id: Mengapa Memilih MyTech Indonesia?,
   title: "Mengapa Memilih MyTech Indonesia?",
   date: "24 Oktober 2025",
   excerpt:
@@ -19,7 +19,7 @@ const blogPosts = [
   ]
 },
   {
-  id: 2,
+  id: Transformasi Digital: Strategi Cerdas Meningkatkan Efisiensi dan Daya Saing Bisnis,
   title: "Transformasi Digital: Strategi Cerdas Meningkatkan Efisiensi dan Daya Saing Bisnis",
   date: "24 Oktober 2025",
   excerpt:
@@ -34,7 +34,7 @@ const blogPosts = [
   ]
 },
   {
-  id: 3,
+  id: Cloud Computing: Fondasi Fleksibilitas dan Keamanan untuk Bisnis Modern,
   title: "Cloud Computing: Fondasi Fleksibilitas dan Keamanan untuk Bisnis Modern",
   date: "24 Oktober 2025",
   excerpt:
