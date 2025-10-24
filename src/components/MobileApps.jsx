@@ -16,51 +16,51 @@ const ServicesMobile = () => {
 
   const services = [
     {
-      title: "Aplikasi Android & iOS",
+      title: "Android & iOS Applications",
       description:
-        "Bangun aplikasi mobile profesional untuk menjangkau pengguna di platform Android dan iOS secara bersamaan.",
+        "Build professional mobile apps to reach users on both Android and iOS platforms seamlessly.",
       icon: Smartphone,
       gradient: "from-blue-700 to-blue-800",
       features: [
         "Native & Hybrid Development",
-        "Desain UX modern & intuitif",
-        "Optimasi performa tinggi",
+        "Modern and intuitive UX design",
+        "High performance optimization",
       ],
     },
     {
-      title: "Aplikasi Bisnis Kustom",
+      title: "Custom Business Apps",
       description:
-        "Solusi mobile yang disesuaikan untuk kebutuhan bisnis Anda — dari manajemen operasional hingga otomasi proses.",
+        "Tailored mobile solutions to support your business operations — from workflow automation to management systems.",
       icon: Settings2,
       gradient: "from-blue-800 to-blue-700",
       features: [
-        "Integrasi API & sistem backend",
-        "Keamanan data & enkripsi",
-        "Monitoring aktivitas real-time",
+        "API & backend system integration",
+        "Data security & encryption",
+        "Real-time activity monitoring",
       ],
     },
     {
       title: "Prototyping & UI/UX Design",
       description:
-        "Kami bantu Anda mewujudkan ide aplikasi dengan desain antarmuka yang menarik dan ramah pengguna.",
+        "We help bring your app ideas to life with beautiful and user-friendly interface designs.",
       icon: Code2,
       gradient: "from-blue-700 to-blue-600",
       features: [
-        "Desain interaktif berbasis Figma",
-        "User flow yang efisien",
-        "Uji coba pengalaman pengguna",
+        "Interactive design using Figma",
+        "Efficient user flow planning",
+        "User experience testing",
       ],
     },
     {
-      title: "Publikasi & Maintenance",
+      title: "App Publishing & Maintenance",
       description:
-        "Dari proses upload ke Play Store/App Store hingga maintenance berkala, kami bantu kelola aplikasi Anda sepenuhnya.",
+        "From uploading to Play Store/App Store to ongoing maintenance — we help manage your app completely.",
       icon: Rocket,
       gradient: "from-blue-600 to-blue-700",
       features: [
-        "Bantuan upload & revisi aplikasi",
-        "Update versi & bug fixing",
-        "Pemeliharaan server & API",
+        "App submission & revision support",
+        "Version updates & bug fixing",
+        "Server & API maintenance",
       ],
     },
   ];
@@ -80,24 +80,24 @@ const ServicesMobile = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-lg mb-8 group transition-colors">
-            <span className="text-sm font-medium">Layanan Mobile Apps</span>
+            <span className="text-sm font-medium">Mobile App Services</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Solusi Aplikasi Mobile Modern untuk
+            Modern Mobile App Solutions for
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-blue-800 bg-clip-text text-transparent">
-              Bisnis & Inovasi Anda
+              Your Business & Innovation
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-            Kami menghadirkan aplikasi mobile berkualitas tinggi dengan desain
-            elegan, performa cepat, dan pengalaman pengguna yang maksimal.
+            We deliver high-quality mobile applications with elegant design,
+            fast performance, and exceptional user experience.
           </p>
         </div>
 
-        {/* Grid Layanan */}
+        {/* Services Grid */}
         <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (
             <div
@@ -130,7 +130,7 @@ const ServicesMobile = () => {
 
                 <div className="pt-6 border-t border-slate-100 dark:border-slate-700">
                   <button className="group inline-flex items-center text-sm font-medium text-slate-900 dark:text-slate-200 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">
-                    Pelajari Lebih Lanjut
+                    Learn More
                     <ArrowUpRight className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
                 </div>
@@ -146,10 +146,10 @@ const ServicesMobile = () => {
 
             <div className="relative space-y-6">
               <h3 className="text-2xl font-bold text-white dark:text-slate-900">
-                Ingin Aplikasi Mobile Kustom?
+                Need a Custom Mobile App?
               </h3>
               <p className="text-slate-400 dark:text-slate-500">
-                Diskusikan ide Anda dengan tim developer kami hari ini.
+                Discuss your ideas with our development team today.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -157,13 +157,13 @@ const ServicesMobile = () => {
                   onClick={() => navigate("/contact")}
                   className="px-8 py-4 rounded-full bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-medium hover:shadow-lg hover:shadow-white/10 dark:hover:shadow-slate-800/30 transition-all duration-300 transform hover:-translate-y-0.5"
                 >
-                  Hubungi Kami
+                  Contact Us
                 </button>
                 <button
                   onClick={() => setShowModal(true)}
                   className="px-8 py-4 rounded-full border-2 border-slate-700 dark:border-slate-400 text-white dark:text-slate-900 font-medium hover:bg-slate-800 dark:hover:bg-slate-200 transition-all duration-300"
                 >
-                  Jadwalkan Konsultasi
+                  Schedule a Consultation
                 </button>
               </div>
             </div>
@@ -182,31 +182,31 @@ const ServicesMobile = () => {
               <X size={20} />
             </button>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              Jadwalkan Konsultasi
+              Schedule a Consultation
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6">
-              Ceritakan ide aplikasi Anda — tim kami akan membantu dari konsep hingga peluncuran.
+              Tell us about your app idea — our team will help you from concept to launch.
             </p>
 
             <form className="space-y-4">
               <input
                 type="text"
-                placeholder="Nama Lengkap"
+                placeholder="Full Name"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="Email Address"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="tel"
-                placeholder="Nomor Telepon"
+                placeholder="Phone Number"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <textarea
                 rows="4"
-                placeholder="Ceritakan kebutuhan aplikasi Anda..."
+                placeholder="Describe your app requirements..."
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
               ></textarea>
 
@@ -214,7 +214,7 @@ const ServicesMobile = () => {
                 type="submit"
                 className="w-full py-3 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-medium transition-all"
               >
-                Kirim Permintaan Konsultasi
+                Send Consultation Request
               </button>
             </form>
           </div>

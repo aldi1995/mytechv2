@@ -7,55 +7,55 @@ const Team = () => {
       name: "Renaldi Bagus Widakdo",
       role: "CEO & Lead Developer",
       description:
-        "Memimpin arah strategis Mytech Indonesia dan memastikan setiap proyek berjalan dengan inovasi serta kualitas tinggi.",
+        "Leads the strategic direction of MyTech Indonesia, ensuring every project is delivered with innovation and top-tier quality.",
     },
     {
       name: "Melika Candra Widyani Mas",
       role: "Project Manager",
       description:
-        "Mengelola komunikasi antara klien dan tim pengembang untuk memastikan proyek selesai tepat waktu dan sesuai harapan.",
+        "Bridges communication between clients and developers to ensure every project is completed on time and meets expectations.",
     },
     {
       name: "Dwi Santoso",
       role: "UI/UX Designer",
       description:
-        "Merancang pengalaman pengguna yang intuitif dengan desain antarmuka yang modern dan fungsional.",
+        "Designs intuitive user experiences with modern and functional interface designs that enhance usability and aesthetics.",
     },
     {
       name: "Andi Pratama",
       role: "Backend Engineer",
       description:
-        "Membangun arsitektur server yang andal dan aman untuk mendukung performa aplikasi secara optimal.",
+        "Builds secure and reliable server architecture to ensure optimal application performance and scalability.",
     },
   ];
 
   const values = [
     {
       icon: Users,
-      title: "Kolaboratif",
+      title: "Collaborative",
       description:
-        "Kami percaya bahwa kerja sama yang kuat menghasilkan solusi yang luar biasa.",
+        "We believe that strong teamwork leads to exceptional solutions and long-term success.",
       gradient: "from-blue-700 to-indigo-800",
     },
     {
       icon: Star,
-      title: "Profesional",
+      title: "Professional",
       description:
-        "Setiap anggota tim memiliki dedikasi tinggi terhadap kualitas dan hasil kerja.",
+        "Each team member is highly dedicated to maintaining excellence in every aspect of their work.",
       gradient: "from-indigo-800 to-blue-900",
     },
     {
       icon: Code,
-      title: "Inovatif",
+      title: "Innovative",
       description:
-        "Kami selalu mencari cara baru untuk menciptakan teknologi yang relevan dan berdampak.",
+        "We constantly explore new ways to create relevant and impactful technology for our clients.",
       gradient: "from-blue-800 to-sky-700",
     },
   ];
 
   return (
     <section className="relative py-32 bg-[#f9fafc] dark:bg-gray-900 transition-colors duration-500">
-      {/* Latar belakang gradasi */}
+      {/* Background gradient */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-full h-full">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] aspect-[1/0.7] bg-gradient-to-b from-white via-blue-50/30 to-transparent dark:from-gray-900 dark:via-gray-800/40 dark:to-transparent rounded-[50%] blur-3xl" />
@@ -66,25 +66,26 @@ const Team = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900 text-white shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Tim Kami</span>
+            <span className="text-sm font-medium">Our Team</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Profesional di Balik
+            The Professionals Behind
             <span className="block mt-2 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
-              Mytech Indonesia
+              MyTech Indonesia
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-gray-300 leading-relaxed">
-            Tim kami terdiri dari para profesional muda yang berdedikasi di bidang teknologi. 
-            Bersama sejak tahun 2023, kami berkomitmen menciptakan solusi digital yang inovatif 
-            dan membantu bisnis beradaptasi di era transformasi digital.
+            Our team consists of passionate young professionals in the
+            technology field. Since 2023, we’ve been committed to building
+            innovative digital solutions that help businesses adapt and thrive
+            in the era of digital transformation.
           </p>
         </div>
 
-        {/* Anggota Tim */}
+        {/* Team Members */}
         <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {teamMembers.map((member, index) => (
             <div
@@ -105,7 +106,7 @@ const Team = () => {
           ))}
         </div>
 
-        {/* Nilai-nilai */}
+        {/* Core Values */}
         <div className="mt-24 grid grid-cols-1 gap-8 md:grid-cols-3">
           {values.map((value, index) => (
             <div

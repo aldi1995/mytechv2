@@ -25,26 +25,26 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Kantor Kami",
+      title: "Our Office",
       details: [
-        "Jl. Cipedes Tengah No.35, Sukagalih, Kec. Sukajadi, Kota Bandung, Jawa Barat 40163",
+        "Jl. Cipedes Tengah No.35, Sukagalih, Sukajadi, Bandung, West Java 40163, Indonesia",
       ],
-      ariaLabel: "Lokasi Kantor",
+      ariaLabel: "Office Location",
     },
     {
       icon: Phone,
-      title: "Kontak Kami",
+      title: "Contact Us",
       details: [
-        "Telepon: +62 851-5692-8164",
+        "Phone: +62 851-5692-8164",
         "Email: hello@mytech-indonesia.web.id",
       ],
-      ariaLabel: "Informasi Kontak",
+      ariaLabel: "Contact Information",
     },
     {
       icon: Clock,
-      title: "Jam Operasional",
-      details: ["Senin - Jumat: 09.00 - 18.00", "Akhir Pekan: Janji temu saja"],
-      ariaLabel: "Jam Operasional",
+      title: "Operating Hours",
+      details: ["Monday - Friday: 09.00 - 18.00", "Weekend: By appointment only"],
+      ariaLabel: "Operating Hours",
     },
   ];
 
@@ -82,13 +82,13 @@ const Contact = () => {
     const configs = {
       success: {
         icon: CheckCircle2,
-        text: "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.",
+        text: "Thank you for your message! We’ll get back to you shortly.",
         className:
           "bg-green-50 dark:bg-green-900/30 border-green-200 dark:border-green-800 text-green-800 dark:text-green-300",
       },
       error: {
         icon: XCircle,
-        text: "Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.",
+        text: "An error occurred while sending your message. Please try again.",
         className:
           "bg-red-50 dark:bg-red-900/30 border-red-200 dark:border-red-800 text-red-800 dark:text-red-300",
       },
@@ -109,7 +109,7 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      "Halo tim MyTech Indonesia! Saya ingin konsultasi mengenai layanan Anda."
+      "Hello MyTech Indonesia team! I’d like to inquire about your services."
     );
     window.open(`https://wa.me/6285156928164?text=${message}`, "_blank");
   };
@@ -117,7 +117,7 @@ const Contact = () => {
   return (
     <section
       className="relative py-20 sm:py-24 bg-white dark:bg-slate-900 transition-colors duration-300"
-      aria-label="Bagian Hubungi Kami"
+      aria-label="Contact Section"
     >
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-slate-50/50 dark:bg-slate-800/50" />
@@ -125,17 +125,17 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
-          {/* Formulir Kontak */}
+          {/* Contact Form */}
           <div className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-slate-100 dark:border-slate-700">
             <h2
               className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-2"
               id="contact-form-title"
             >
-              Hubungi Kami
+              Contact Us
             </h2>
             <p className="text-slate-600 dark:text-slate-300 mb-4">
-              Mari kita diskusikan bagaimana kami dapat membantu mengembangkan
-              bisnis Anda.
+              Let’s discuss how we can help grow your business through smart
+              digital solutions.
             </p>
 
             <StatusMessage status={submitStatus} />
@@ -147,8 +147,8 @@ const Contact = () => {
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { id: "firstName", label: "Nama Depan", placeholder: "John" },
-                  { id: "lastName", label: "Nama Belakang", placeholder: "Doe" },
+                  { id: "firstName", label: "First Name", placeholder: "John" },
+                  { id: "lastName", label: "Last Name", placeholder: "Doe" },
                 ].map((f) => (
                   <div key={f.id}>
                     <label
@@ -180,7 +180,7 @@ const Contact = () => {
                 },
                 {
                   id: "phone",
-                  label: "Nomor Telepon",
+                  label: "Phone Number",
                   type: "tel",
                   placeholder: "(123) 456-7890",
                 },
@@ -210,7 +210,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
                 >
-                  Pesan <span className="text-red-500">*</span>
+                  Message <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -220,7 +220,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all duration-200 resize-y min-h-[100px]"
-                  placeholder="Bagaimana kami dapat membantu Anda?"
+                  placeholder="How can we assist you?"
                 />
               </div>
 
@@ -233,11 +233,11 @@ const Contact = () => {
                   {isSubmitting ? (
                     <>
                       <Loader2 className="animate-spin mr-2 h-5 w-5" />
-                      Mengirim...
+                      Sending...
                     </>
                   ) : (
                     <>
-                      Kirim Pesan
+                      Send Message
                       <ArrowUpRight className="ml-2 w-4 h-4" />
                     </>
                   )}
@@ -255,19 +255,18 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Informasi Kontak + MAPS */}
+          {/* Contact Info + MAPS */}
           <div className="lg:pl-8 space-y-8">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-2">
-                Mari Bangun Sesuatu yang
+                Let’s Build Something
                 <span className="block mt-2 bg-gradient-to-r from-blue-700 to-sky-600 bg-clip-text text-transparent">
-                  Luar Biasa Bersama
+                  Amazing Together
                 </span>
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-300 mt-4">
-                Baik Anda memiliki pertanyaan tentang layanan kami, membutuhkan
-                solusi khusus, atau hanya ingin menyapa, kami dengan senang
-                hati akan mendengar dari Anda.
+                Whether you have questions about our services, need a custom
+                solution, or just want to say hi — we’d love to hear from you.
               </p>
             </div>
 
@@ -305,7 +304,7 @@ const Contact = () => {
 
             <div className="mt-10 rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700">
               <iframe
-                title="Lokasi Kantor MyTech Indonesia"
+                title="MyTech Indonesia Office Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.830215269141!2d107.59314147475802!3d-6.867441367188985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6ed56b7a251%3A0x2f4f9c93bb84c40!2sJl.%20Cipedes%20Tengah%20No.35%2C%20Sukagalih%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040163!5e0!3m2!1sid!2sid!4v1739568888888!5m2!1sid!2sid"
                 width="100%"
                 height="320"

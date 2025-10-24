@@ -3,59 +3,59 @@ import { ArrowUpRight, CheckCircle2, ExternalLink } from "lucide-react";
 import LazyImage from "./LazyImage";
 
 const Product = () => {
-  const [activeFilter, setActiveFilter] = useState("Semua");
+  const [activeFilter, setActiveFilter] = useState("All");
 
-  const categories = ["Semua", "Bisnis", "Edukasi", "Produktivitas", "Keuangan"];
+  const categories = ["All", "Business", "Education", "Productivity", "Finance"];
 
   const products = [
     {
       name: "Remotely SaaS",
       tagline:
-        "Manajemen kerja jarak jauh, HRMS, payroll & komunikasi tim dalam satu dashboard.",
+        "Remote work management, HRMS, payroll & team communication in one dashboard.",
       image: "/remotely.jpg",
-      category: "Produktivitas",
-      price: "Rp 149.000 /bulan",
+      category: "Productivity",
+      price: "$9.99 /month",
       features: [
-        "Manajemen proyek & absensi otomatis",
-        "Payroll & HR digital",
-        "Integrasi chat & file sharing",
+        "Automated project & attendance management",
+        "Digital HR & payroll system",
+        "Built-in chat & file sharing integration",
       ],
       link: "https://remotely.gt.tc",
     },
     {
       name: "MyERP Cloud",
       tagline:
-        "Sistem ERP terintegrasi untuk mengelola keuangan, inventori, dan operasional bisnis Anda.",
+        "Integrated ERP system to manage finance, inventory, and business operations seamlessly.",
       image: "/erp.png",
-      category: "Bisnis",
-      price: "Rp 299.000 /bulan",
+      category: "Business",
+      price: "$19.99 /month",
       features: [
-        "Manajemen keuangan & akuntansi",
-        "Inventori & pembelian otomatis",
-        "Dashboard analitik realtime",
+        "Financial & accounting management",
+        "Automated inventory & purchasing",
+        "Real-time analytics dashboard",
       ],
       link: "#",
     },
     {
       name: "MyPOS Cloud",
       tagline:
-        "POS modern untuk restoran & kafe dengan dashboard penjualan realtime.",
+        "Modern POS system for restaurants and cafés with real-time sales dashboard.",
       image: "/resto.png",
-      category: "Bisnis",
-      price: "Rp 199.000 /bulan",
+      category: "Business",
+      price: "$12.99 /month",
       features: [
-        "Manajemen pesanan & stok",
-        "Laporan penjualan otomatis",
-        "Support multi-device",
+        "Order & stock management",
+        "Automated sales reports",
+        "Multi-device support",
       ],
       link: "#",
     },
   ];
 
   return (
-    <section className="relative py-32 bg-slate-50 dark:bg-[#0b0f19] transition-colors duration-500">
-      {/* Latar belakang dekoratif */}
-      <div className="absolute inset-0 -z-10">
+    <section className="relative py-32 bg-slate-50 dark:bg-slate-900 transition-colors duration-700 ease-in-out">
+      {/* Background Decoration */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute w-full h-full">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-200 dark:bg-blue-900 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
           <div className="absolute -bottom-8 left-20 w-72 h-72 bg-sky-200 dark:bg-sky-800 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000" />
@@ -66,25 +66,25 @@ const Product = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group mb-8">
-            <span className="text-sm font-medium">Produk Kami</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer group mb-8">
+            <span className="text-sm font-medium">Our Products</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Solusi
+            Our
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">
-              SaaS Kami
+              SaaS Solutions
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-            Temukan berbagai solusi SaaS yang siap pakai untuk membantu bisnis Anda
-            tumbuh lebih cepat, efisien, dan modern.
+            Discover ready-to-use SaaS solutions to help your business grow faster,
+            more efficiently, and with modern automation.
           </p>
         </div>
 
-        {/* Filter kategori */}
+        {/* Category Filter */}
         <div className="mt-12 flex flex-wrap justify-center gap-4">
           {categories.map((category) => (
             <button
@@ -101,30 +101,28 @@ const Product = () => {
           ))}
         </div>
 
-        {/* Daftar produk */}
+        {/* Product List */}
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-3">
           {products
             .filter(
               (product) =>
-                activeFilter === "Semua" ||
-                activeFilter === "All" ||
-                product.category === activeFilter
+                activeFilter === "All" || product.category === activeFilter
             )
             .map((product) => (
               <div
                 key={product.name}
-                className="group relative bg-white dark:bg-slate-900 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 dark:border-slate-800"
+                className="group relative bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
               >
-                {/* Gambar produk */}
+                {/* Product Image */}
                 <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl">
                   <LazyImage
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                   />
                 </div>
 
-                {/* Info produk */}
+                {/* Product Info */}
                 <div className="p-8">
                   <span className="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/40 px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400 mb-4">
                     {product.category}
@@ -156,13 +154,15 @@ const Product = () => {
                   <div className="flex gap-4">
                     <a
                       href={product.link}
-                      className="inline-flex items-center justify-center w-full gap-2 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition-all"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-full gap-2 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 dark:hover:bg-blue-500 transition-all duration-300"
                     >
-                      Coba Gratis
+                      Try for Free
                       <ExternalLink className="w-4 h-4" />
                     </a>
-                    <button className="inline-flex items-center justify-center w-full gap-2 border border-blue-200 dark:border-blue-800 py-3 rounded-xl text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 font-medium transition-all">
-                      Detail
+                    <button className="inline-flex items-center justify-center w-full gap-2 border border-blue-200 dark:border-blue-700 py-3 rounded-xl text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 font-medium transition-all duration-300">
+                      Details
                     </button>
                   </div>
                 </div>

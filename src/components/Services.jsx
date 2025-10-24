@@ -16,36 +16,36 @@ const Services = () => {
 
   const services = [
     {
-      title: "Solusi Enterprise",
+      title: "Enterprise Solutions",
       description:
-        "Platform enterprise kustom yang dibangun dengan teknologi terkini.",
+        "Custom enterprise platforms built with the latest technology.",
       icon: Monitor,
       gradient: "from-blue-700 to-blue-800",
-      features: ["Integrasi Cloud", "Arsitektur Skalabel", "Dukungan 24/7"],
+      features: ["Cloud Integration", "Scalable Architecture", "24/7 Support"],
     },
     {
-      title: "Pengembangan Mobile",
+      title: "Mobile Development",
       description:
-        "Aplikasi native dan lintas platform dengan pengalaman pengguna terbaik.",
+        "Native and cross-platform mobile apps designed for exceptional user experience.",
       icon: Smartphone,
       gradient: "from-blue-800 to-blue-700",
-      features: ["Performa Native", "Lintas Platform", "Dukungan Offline"],
+      features: ["Native Performance", "Cross Platform", "Offline Support"],
     },
     {
-      title: "Layanan Cloud",
+      title: "Cloud Services",
       description:
-        "Infrastruktur cloud yang skalabel dan dioptimalkan untuk performa tinggi.",
+        "Scalable cloud infrastructure optimized for high performance and reliability.",
       icon: Cloud,
       gradient: "from-blue-700 to-blue-600",
-      features: ["Auto-scaling", "Load Balancing", "Monitoring Real-time"],
+      features: ["Auto-scaling", "Load Balancing", "Real-time Monitoring"],
     },
     {
-      title: "Keamanan Siber",
+      title: "Cybersecurity",
       description:
-        "Perlindungan canggih untuk menjaga aset digital Anda tetap aman.",
+        "Advanced protection to keep your digital assets secure and compliant.",
       icon: Shield,
       gradient: "from-blue-600 to-blue-700",
-      features: ["Deteksi Ancaman", "Audit Berkala", "Kepatuhan Standar"],
+      features: ["Threat Detection", "Regular Audits", "Standard Compliance"],
     },
   ];
 
@@ -64,24 +64,24 @@ const Services = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-blue-600 text-white shadow-lg mb-8 group">
-            <span className="text-sm font-medium">Layanan Kami</span>
+            <span className="text-sm font-medium">Our Services</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </div>
 
           <h2 className="text-5xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-6xl">
-            Solusi Lengkap untuk
+            Comprehensive Solutions for
             <span className="block mt-2 bg-gradient-to-r from-blue-700 to-blue-800 bg-clip-text text-transparent">
-              Kesuksesan Anda
+              Your Success
             </span>
           </h2>
 
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-            Ubah bisnis Anda dengan layanan digital menyeluruh kami — dirancang
-            dengan cermat untuk mendorong inovasi dan pertumbuhan berkelanjutan.
+            Transform your business with our full-scale digital services —
+            thoughtfully crafted to drive innovation and sustainable growth.
           </p>
         </div>
 
-        {/* Grid Layanan */}
+        {/* Services Grid */}
         <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (
             <div
@@ -116,7 +116,7 @@ const Services = () => {
 
                 <div className="pt-6 border-t border-slate-100 dark:border-slate-700">
                   <button className="group inline-flex items-center text-sm font-medium text-slate-900 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
-                    Pelajari Lebih Lanjut
+                    Learn More
                     <ArrowUpRight className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
                 </div>
@@ -132,10 +132,10 @@ const Services = () => {
 
             <div className="relative space-y-6">
               <h3 className="text-2xl font-bold text-white">
-                Siap Mengubah Bisnis Anda?
+                Ready to Transform Your Business?
               </h3>
               <p className="text-slate-400">
-                Mulailah bersama tim ahli kami hari ini.
+                Start your journey with our expert team today.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -143,13 +143,13 @@ const Services = () => {
                   onClick={() => navigate("/contact")}
                   className="px-8 py-4 rounded-full bg-white dark:bg-blue-600 text-slate-900 dark:text-white font-medium hover:shadow-lg hover:shadow-white/10 transition-all duration-300 transform hover:-translate-y-0.5"
                 >
-                  Mulai Proyek Anda
+                  Start Your Project
                 </button>
                 <button
                   onClick={() => setShowModal(true)}
                   className="px-8 py-4 rounded-full border-2 border-slate-700 dark:border-slate-600 text-white font-medium hover:bg-slate-800 dark:hover:bg-slate-700 transition-all duration-300"
                 >
-                  Jadwalkan Konsultasi
+                  Schedule a Consultation
                 </button>
               </div>
             </div>
@@ -168,32 +168,32 @@ const Services = () => {
               <X size={20} />
             </button>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              Jadwalkan Konsultasi
+              Schedule a Consultation
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6">
-              Isi formulir di bawah ini, tim kami akan segera menghubungi Anda
-              untuk jadwal konsultasi.
+              Fill out the form below, and our team will get in touch with you
+              shortly to arrange your consultation.
             </p>
 
             <form className="space-y-4">
               <input
                 type="text"
-                placeholder="Nama Lengkap"
+                placeholder="Full Name"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 dark:text-white"
               />
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="Email Address"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 dark:text-white"
               />
               <input
                 type="tel"
-                placeholder="Nomor Telepon"
+                placeholder="Phone Number"
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 dark:text-white"
               />
               <textarea
                 rows="4"
-                placeholder="Ceritakan kebutuhan Anda..."
+                placeholder="Tell us about your needs..."
                 className="w-full p-3 rounded-lg border border-slate-200 dark:border-slate-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 dark:text-white"
               ></textarea>
 
@@ -201,7 +201,7 @@ const Services = () => {
                 type="submit"
                 className="w-full py-3 rounded-lg bg-blue-700 dark:bg-blue-600 text-white font-medium hover:opacity-90 transition-all"
               >
-                Kirim Permintaan Konsultasi
+                Submit Consultation Request
               </button>
             </form>
           </div>

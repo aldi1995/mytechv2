@@ -2,52 +2,52 @@
 
 const blogPosts = [
   {
-  id: Mengapa Memilih MyTech Indonesia?,
-  title: "Mengapa Memilih MyTech Indonesia?",
-  date: "24 Oktober 2025",
-  excerpt:
-    "MyTech Indonesia hadir sebagai mitra teknologi terpercaya yang membantu bisnis dan institusi bertransformasi digital secara efisien, modern, dan berkelanjutan.",
-  content: [
-    "Di tengah pesatnya perkembangan dunia digital, setiap bisnis membutuhkan mitra teknologi yang tidak hanya mahir secara teknis, tetapi juga memahami arah dan kebutuhan bisnis secara menyeluruh. MyTech Indonesia hadir untuk menjawab tantangan tersebut — membantu bisnis dan institusi bertransformasi melalui solusi digital yang efisien, modern, dan berkelanjutan.",
-    "MyTech tidak sekadar membuat website atau aplikasi. Kami membangun ekosistem digital lengkap yang saling terhubung — mulai dari sistem informasi, cloud service, hingga integrasi data antar platform. Semua dirancang agar operasional bisnis menjadi lebih mudah, cepat, dan terukur.",
-    "Setiap proyek MyTech ditangani oleh tim ahli di bidang web development, IT system, dan data management. Kami menerapkan pendekatan customized solution, artinya setiap sistem dikembangkan sesuai kebutuhan dan karakter bisnis klien, bukan template generik.",
-    "Kami menggunakan teknologi terbaru yang aman, efisien, dan scalable, seperti React.js, Express.js, dan sistem berbasis Cloud. Dengan arsitektur yang kuat, setiap produk MyTech dapat tumbuh seiring perkembangan bisnis tanpa perlu membangun ulang dari awal.",
-    "MyTech berkomitmen memberikan layanan purna-jual terbaik. Kami selalu siap membantu dalam pemeliharaan sistem, penambahan fitur, hingga penyelesaian kendala teknis — dengan komunikasi yang cepat dan transparan.",
-    "Bagi MyTech, teknologi bukan hanya alat — tetapi penggerak perubahan positif. Kami percaya digitalisasi dapat membuka peluang baru, memperluas jangkauan bisnis, dan meningkatkan efisiensi di berbagai sektor.",
-    "MyTech Indonesia bukan sekadar penyedia jasa IT. Kami adalah mitra strategis yang membantu bisnis Anda tumbuh di era digital. Dengan pendekatan profesional, inovatif, dan berorientasi hasil, kami berkomitmen membawa setiap klien menuju masa depan yang lebih cerdas dan terkoneksi.",
-    "MyTech Indonesia — Empowering Growth Through Technology."
-  ]
-},
+    id: "Why Choose MyTech Indonesia?",
+    title: "Why Choose MyTech Indonesia?",
+    date: "October 24, 2025",
+    excerpt:
+      "MyTech Indonesia stands as a trusted technology partner that helps businesses and institutions achieve efficient, modern, and sustainable digital transformation.",
+    content: [
+      "In the fast-evolving digital world, every business needs a technology partner who not only has technical expertise but also understands the direction and specific needs of the business. MyTech Indonesia was founded to answer that challenge — helping businesses and institutions transform through efficient, modern, and sustainable digital solutions.",
+      "MyTech doesn’t just build websites or apps. We develop a complete digital ecosystem — from information systems and cloud services to platform integration. Everything is designed to make business operations easier, faster, and more measurable.",
+      "Each MyTech project is handled by experts in web development, IT systems, and data management. We apply a customized solution approach, meaning each system is developed according to the client's specific needs and business characteristics, not from a generic template.",
+      "We use the latest technologies that are secure, efficient, and scalable — such as React.js, Express.js, and Cloud-based systems. With a strong architecture, every MyTech product is built to grow alongside your business without needing to rebuild from scratch.",
+      "MyTech is committed to providing the best after-sales service. We are always ready to assist in system maintenance, feature enhancement, and technical troubleshooting — with fast and transparent communication.",
+      "For MyTech, technology is not just a tool — it is a driver of positive change. We believe digitalization opens new opportunities, expands business reach, and improves efficiency across sectors.",
+      "MyTech Indonesia is more than just an IT service provider. We are a strategic partner helping your business grow in the digital era. With a professional, innovative, and results-oriented approach, we are committed to leading every client toward a smarter and more connected future.",
+      "MyTech Indonesia — Empowering Growth Through Technology."
+    ]
+  },
   {
-  id: Transformasi Digital: Strategi Cerdas Meningkatkan Efisiensi dan Daya Saing Bisnis,
-  title: "Transformasi Digital: Strategi Cerdas Meningkatkan Efisiensi dan Daya Saing Bisnis",
-  date: "24 Oktober 2025",
-  excerpt:
-    "Transformasi digital membuka peluang besar bagi bisnis untuk beradaptasi dengan perubahan, meningkatkan efisiensi operasional, dan memperkuat daya saing di era modern.",
-  content: [
-    "Transformasi digital bukan sekadar mengikuti tren teknologi, melainkan langkah strategis untuk menjawab tantangan bisnis di era modern. Di tengah perubahan cepat dunia digital, perusahaan perlu beradaptasi agar tetap relevan dan mampu bersaing. Melalui transformasi digital, bisnis dapat mengoptimalkan proses kerja, meningkatkan pengalaman pelanggan, serta membuka peluang baru dalam model bisnis yang lebih efisien.",
-    "Transformasi digital dimulai dari pemahaman mendalam terhadap kebutuhan bisnis dan potensi teknologi yang bisa diterapkan. MyTech Indonesia membantu klien mengidentifikasi area yang paling membutuhkan digitalisasi, mulai dari sistem manajemen internal, proses keuangan, hingga interaksi pelanggan.",
-    "Dengan pendekatan bertahap dan terukur, MyTech merancang strategi digital yang realistis, sesuai dengan skala dan kesiapan perusahaan. Kami menerapkan teknologi modern seperti cloud computing, integrasi API, serta sistem otomatisasi untuk mempermudah manajemen data dan operasional sehari-hari.",
-    "Salah satu manfaat utama transformasi digital adalah meningkatnya efisiensi. Proses manual yang memakan waktu dapat digantikan dengan sistem otomatis yang akurat dan konsisten. Selain itu, keputusan bisnis dapat diambil lebih cepat karena data tersaji secara real-time dan terpusat.",
-    "Namun, keberhasilan transformasi digital tidak hanya bergantung pada teknologi, melainkan juga pada kesiapan sumber daya manusia dan budaya organisasi. MyTech memahami pentingnya pelatihan dan pendampingan agar seluruh tim dapat beradaptasi dengan perubahan digital tanpa hambatan.",
-    "Dengan pengalaman dan keahlian di bidang pengembangan sistem, MyTech Indonesia berperan sebagai mitra strategis yang mendampingi perjalanan transformasi digital bisnis Anda — mulai dari perencanaan, implementasi, hingga optimalisasi. Bersama kami, jadikan teknologi sebagai pondasi pertumbuhan dan inovasi jangka panjang."
-  ]
-},
+    id: "Digital Transformation: Smart Strategies to Boost Efficiency and Competitiveness",
+    title: "Digital Transformation: Smart Strategies to Boost Efficiency and Competitiveness",
+    date: "October 24, 2025",
+    excerpt:
+      "Digital transformation opens vast opportunities for businesses to adapt to change, improve operational efficiency, and strengthen competitiveness in the modern era.",
+    content: [
+      "Digital transformation is not just about following technology trends — it is a strategic move to tackle modern business challenges. In today’s fast-changing digital world, companies must adapt to stay relevant and competitive. Through digital transformation, businesses can optimize workflows, enhance customer experience, and unlock new opportunities in more efficient business models.",
+      "Digital transformation begins with a deep understanding of business needs and the potential technologies that can be applied. MyTech Indonesia helps clients identify key areas that require digitalization — from internal management systems and financial processes to customer interactions.",
+      "With a gradual and measurable approach, MyTech designs realistic digital strategies aligned with the scale and readiness of each company. We implement modern technologies such as cloud computing, API integration, and automation systems to simplify data and daily operations management.",
+      "One of the main benefits of digital transformation is increased efficiency. Time-consuming manual processes can be replaced with accurate and consistent automation. Furthermore, business decisions can be made faster thanks to real-time and centralized data.",
+      "However, successful digital transformation doesn’t rely solely on technology — it also depends on human resources and organizational culture. MyTech understands the importance of training and guidance to ensure every team member adapts smoothly to digital changes.",
+      "With proven experience in system development, MyTech Indonesia serves as a strategic partner to accompany your business through its digital transformation journey — from planning and implementation to optimization. Together, we make technology the foundation for long-term growth and innovation."
+    ]
+  },
   {
-  id: Cloud Computing: Fondasi Fleksibilitas dan Keamanan untuk Bisnis Modern,
-  title: "Cloud Computing: Fondasi Fleksibilitas dan Keamanan untuk Bisnis Modern",
-  date: "24 Oktober 2025",
-  excerpt:
-    "Cloud computing memberikan keleluasaan bagi bisnis untuk berkembang lebih cepat dengan infrastruktur yang efisien, aman, dan mudah disesuaikan dengan kebutuhan.",
-  content: [
-    "Dalam beberapa tahun terakhir, cloud computing telah menjadi elemen kunci dalam strategi digital banyak perusahaan. Teknologi ini memungkinkan bisnis untuk mengakses sumber daya IT seperti server, penyimpanan, dan database secara online tanpa perlu infrastruktur fisik yang besar. Dengan demikian, biaya operasional dapat ditekan dan fleksibilitas bisnis meningkat secara signifikan.",
-    "MyTech Indonesia memahami bahwa setiap bisnis memiliki kebutuhan yang unik. Karena itu, kami menyediakan solusi cloud yang dapat disesuaikan — mulai dari migrasi sistem, manajemen data, hingga pengembangan aplikasi berbasis cloud. Kami memastikan setiap proses dilakukan dengan aman, efisien, dan tanpa mengganggu jalannya operasional.",
-    "Salah satu keunggulan utama cloud computing adalah skalabilitas. Perusahaan dapat menambah atau mengurangi kapasitas sesuai kebutuhan tanpa investasi besar di awal. Hal ini membuat bisnis lebih adaptif terhadap perubahan pasar dan pertumbuhan volume data yang cepat.",
-    "Selain fleksibilitas, keamanan menjadi faktor penting dalam penerapan cloud. MyTech menerapkan standar keamanan tingkat tinggi, termasuk enkripsi data, autentikasi berlapis, serta backup otomatis untuk memastikan informasi bisnis tetap terlindungi dari ancaman siber.",
-    "Kami juga menyediakan layanan monitoring dan optimasi performa cloud secara berkala, agar sistem tetap berjalan stabil dan efisien. Tim support kami siap memberikan bantuan teknis dan pembaruan sesuai perkembangan teknologi terkini.",
-    "Dengan dukungan cloud computing dari MyTech Indonesia, perusahaan dapat berfokus pada inovasi dan pengembangan bisnis tanpa harus terbebani oleh kompleksitas infrastruktur IT. Teknologi cloud bukan sekadar tren, melainkan fondasi utama menuju masa depan bisnis yang tangguh, fleksibel, dan siap menghadapi tantangan digital."
-  ]
-},
+    id: "Cloud Computing: The Foundation of Flexibility and Security for Modern Businesses",
+    title: "Cloud Computing: The Foundation of Flexibility and Security for Modern Businesses",
+    date: "October 24, 2025",
+    excerpt:
+      "Cloud computing enables businesses to scale faster with infrastructure that is efficient, secure, and easily adaptable to evolving needs.",
+    content: [
+      "In recent years, cloud computing has become a key element in many companies’ digital strategies. This technology allows businesses to access IT resources such as servers, storage, and databases online — without requiring large physical infrastructure. As a result, operational costs are reduced and business flexibility increases significantly.",
+      "MyTech Indonesia understands that every business has unique needs. That’s why we provide tailored cloud solutions — from system migration and data management to cloud-based application development. We ensure that each process is secure, efficient, and smooth, without disrupting your business operations.",
+      "One of the main advantages of cloud computing is scalability. Companies can easily increase or decrease capacity as needed without significant upfront investment. This makes businesses more adaptive to market changes and growing data volumes.",
+      "Beyond flexibility, security is a critical factor in cloud implementation. MyTech applies high-level security standards, including data encryption, multi-layer authentication, and automatic backups to ensure your business information is protected from cyber threats.",
+      "We also provide regular cloud performance monitoring and optimization services to keep systems stable and efficient. Our support team is always ready to provide technical assistance and updates in line with the latest technology developments.",
+      "With MyTech Indonesia’s cloud computing support, businesses can focus on innovation and growth without being burdened by IT infrastructure complexity. Cloud technology is not just a trend — it’s the foundation for a resilient, flexible, and future-ready business."
+    ]
+  }
 ];
 
 export default blogPosts;

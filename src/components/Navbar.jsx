@@ -17,7 +17,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 🌓 Terapkan tema dark/light ke <html>
+  // 🌓 Apply dark/light theme to <html>
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -28,30 +28,30 @@ const Navbar = () => {
     }
   }, [darkMode]);
 
-  // ✅ menu utama + dropdown
+  // ✅ Main menu + dropdown items
   const menuItems = [
-    { title: "Beranda", href: "/" },
-    { title: "Tentang Kami", href: "/about" },
-    { title: "Team Kami", href: "/team" },
+    { title: "Home", href: "/" },
+    { title: "About Us", href: "/about" },
+    { title: "Our Team", href: "/team" },
     { title: "Blog", href: "/blog" },
     {
-      title: "Layanan",
+      title: "Services",
       children: [
-        { title: "Website", href: "/web" },
-        { title: "Aplikasi Mobile", href: "/mobileapps" },
-        { title: "Konsultasi IT", href: "/consulting" },
-        { title: "SaaS", href: "/product" },
-        { title: "Harga", href: "/pricing" },
+        { title: "Website Development", href: "/web" },
+        { title: "Mobile Applications", href: "/mobileapps" },
+        { title: "IT Consulting", href: "/consulting" },
+        { title: "SaaS Products", href: "/product" },
+        { title: "Pricing", href: "/pricing" },
       ],
     },
     {
-      title: "Portofolio",
+      title: "Portfolio",
       children: [
-        { title: "Website Klien", href: "/portfolio" },
-        { title: "Aplikasi Android", href: "/mobile" },
+        { title: "Client Websites", href: "/portfolio" },
+        { title: "Android Apps", href: "/mobile" },
       ],
     },
-    { title: "Kontak", href: "/contact" },
+    { title: "Contact", href: "/contact" },
   ];
 
   const closeMenu = () => setIsOpen(false);
@@ -75,7 +75,7 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Navigasi Desktop */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             {menuItems.map((item, idx) =>
               item.children ? (
@@ -120,7 +120,7 @@ const Navbar = () => {
               )
             )}
 
-            {/* Tombol Dark Mode */}
+            {/* Dark Mode Button */}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
@@ -133,9 +133,9 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Tombol menu mobile */}
+          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
-            {/* Tombol Dark Mode (mobile) */}
+            {/* Dark Mode (mobile) */}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
@@ -157,7 +157,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Navigasi Mobile */}
+      {/* Mobile Navigation */}
       <div
         className={`md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg transition-all duration-300 ease-in-out ${
           isOpen
@@ -219,7 +219,7 @@ const Navbar = () => {
             className="block w-full mt-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-600 dark:from-indigo-500 dark:to-sky-400 text-white rounded-lg font-medium text-base hover:from-blue-500 hover:to-sky-500 transition-all duration-300 text-center shadow-md hover:shadow-sky-500/25"
             onClick={closeMenu}
           >
-            Mulai Sekarang
+            Get Started
           </Link>
         </div>
       </div>
