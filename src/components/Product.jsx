@@ -37,7 +37,7 @@ const Product = () => {
       link: "#",
     },
     {
-      name: "MyPOS Cloud",
+      name: "CulinaSys",
       tagline:
         "Sistem POS modern untuk restoran dan kafe dengan dashboard penjualan real-time.",
       image: "/resto.png",
@@ -48,7 +48,7 @@ const Product = () => {
         "Laporan penjualan otomatis",
         "Dukungan multi-perangkat",
       ],
-      link: "#",
+      link: "https://culinasys.rf.gd/",
     },
   ];
 
