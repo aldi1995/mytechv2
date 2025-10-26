@@ -102,13 +102,12 @@ const Footer = () => {
               <li className="flex items-start text-slate-300 dark:text-slate-400">
                 <MapPin className="w-5 h-5 mr-3 text-sky-400 mt-1" />
                 <a
-                  href="#"
+                  href="https://www.google.com/maps?q=Jl.+Cipedes+Tengah+No.35,+Sukagalih,+Sukajadi,+Bandung,+Jawa+Barat+40163"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-sky-400 transition-colors duration-200 leading-relaxed"
                 >
-                  Jl. Asia Afrika No.57, Braga, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40251 Menara BRI Lantai 6 <br />
-                  Kota Bandung, Jawa Barat 40163
+                  Jl. Asia Afrika No.57, Braga, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40251<br />
                 </a>
               </li>
             </ul>
