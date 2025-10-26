@@ -303,7 +303,7 @@ const Contact = () => {
             <div className="mt-10 rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700">
               <iframe
                 title="Lokasi Kantor MyTech Indonesia"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.830215269141!2d107.59314147475802!3d-6.867441367188985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6ed56b7a251%3A0x2f4f9c93bb84c40!2sJl.%20Cipedes%20Tengah%20No.35%2C%20Sukagalih%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040163!5e0!3m2!1sid!2sid!4v1739568888888!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.746567354598!2d107.60481577403554!3d-6.92087076773753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e625ab8dab4f%3A0xef1ba9e9f456d050!2sMenara%20BRI%20Bandung!5e0!3m2!1sen!2sid!4v1761476624180!5m2!1sen!2sid"
                 width="100%"
                 height="320"
                 allowFullScreen=""
