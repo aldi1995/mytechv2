@@ -107,7 +107,8 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-sky-400 transition-colors duration-200 leading-relaxed"
                 >
-                  Jl. Asia Afrika No.57, Braga, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40251<br />
+                  Jl. Asia Afrika No.57, Braga, Kec. Sumur Bandung,<br /> 
+                  Kota Bandung, Jawa Barat 40251 (Menara BRI Lantai 6)
                 </a>
               </li>
             </ul>
