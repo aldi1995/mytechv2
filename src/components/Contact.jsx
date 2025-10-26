@@ -27,7 +27,7 @@ const Contact = () => {
       icon: MapPin,
       title: "Kantor Kami",
       details: [
-        "Jl. Asia Afrika No.57, Braga, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40251 Menara BRI Lantai 6",
+        "Jl. Asia Afrika No.57, Braga, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40251 (Menara BRI Lantai 6)",
       ],
       ariaLabel: "Lokasi Kantor",
     },
